@@ -51,6 +51,7 @@
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^1",
         "mikey179/vfsstream": "^1.6",
+        "dms/phpunit-arraysubset-asserts": "^0.3.0",
         "sminnee/phpunit-mock-objects": "^3.4.7"
     },
     "extra": {
