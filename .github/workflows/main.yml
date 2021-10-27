@@ -1,0 +1,10 @@
+
+name: Module CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  ci:
+    uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic
