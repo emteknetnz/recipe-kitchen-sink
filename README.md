@@ -26,3 +26,5 @@ When installing the kitchen sink, your project Page and PageController subclasse
 SiteTree and ContentController. This is [only an issue](https://github.com/silverstripe/cwp-recipe-kitchen-sink/issues/30)
 with the kitchen sink recipe, and requires you to manually change the parent classes to CWP's BasePage and
 BasePageController.
+
+.
