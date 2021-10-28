@@ -1,8 +1,10 @@
 name: Module CI
 
 on:
-  push:
-  pull_request:
+  push: ~
+  # apparently the tilde allows manually running things?
+  # https://github.com/Behat/Behat/pull/1361/files
+  pull_request: ~
 
 jobs:
   ci:
