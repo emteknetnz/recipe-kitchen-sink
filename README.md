@@ -27,4 +27,4 @@ SiteTree and ContentController. This is [only an issue](https://github.com/silve
 with the kitchen sink recipe, and requires you to manually change the parent classes to CWP's BasePage and
 BasePageController.
 
-..
+...
