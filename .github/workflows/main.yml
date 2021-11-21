@@ -165,18 +165,10 @@ jobs:
             composer update --prefer-source --no-interaction --no-progress ${{ matrix.composer_arg }}
           fi
 
-          # TODO: tmp until behat-extension PR merged
-          # Was having issues with 'github authentication required when adding cc's repo even with the https url
-          # so doing this wacky way instead which is much faster anyway
-          if [ ${{ matrix.endtoend }} ]; then
-            wget https://raw.githubusercontent.com/creative-commoners/silverstripe-behat-extension/pulls/4/skip-mfa/src/Context/BasicContext.php
-            cp BasicContext.php vendor/silverstripe/behat-extension/src/Context/BasicContext.php
-          fi
-
       - name: Code modification
         run: |
-          REMOTE_FILE https://raw.githubusercontent.com/silverstripe/silverstripe-framework/82a504453dc03a3e3505ebb802bbd2814c8c4ca3/src/Control/Director.php
-          LOCAL_FILE vendor/silverstripe/framework/src/Control/Director.php
+          REMOTE_FILE=https://github.com/silverstripe/silverstripe-framework/blob/458596ffe59e8801d19e3e73a90d8559e2be51ac/src/Control/Director.php
+          LOCAL_FILE=vendor/silverstripe/framework/src/Control/Director.php
           wget $REMOTE_FILE -O $LOCAL_FILE
 
       - name: Final preparation
