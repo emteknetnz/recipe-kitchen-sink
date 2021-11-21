@@ -1,11 +1,224 @@
-name: Module CI
+# Used to do recipe test for https://github.com/silverstripe/silverstripe-framework/pull/10155
+
+name: ci
 
 on:
-  push: ~
-  # apparently the tilde allows manually running things?
-  # https://github.com/Behat/Behat/pull/1361/files
-  pull_request: ~
+  push:
 
 jobs:
-  ci:
-    uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic
+
+  # used to generate a dynamic jobs matrix
+  genmatrix:
+    name: Generate matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.generate-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          extensions: yaml
+      - name: generate matrix
+        id: generate-matrix
+        run: |
+          cat << EOF > __matrix.php
+          <?php
+          \$matrix = ['include' => []];
+          if ((file_exists('phpunit.xml') || file_exists('phpunit.xml.dist'))) {
+            \$fn = file_exists('phpunit.xml') ? 'phpunit.xml' : 'phpunit.xml.dist';
+            \$d = new DOMDocument();
+            \$d->preserveWhiteSpace = false;
+            \$d->load(\$fn);
+            \$x = new DOMXPath(\$d);
+            \$tss = \$x->query('//testsuite');
+            foreach (\$tss as \$ts) {
+              if (!\$ts->hasAttribute('name') || \$ts->getAttribute('name') == 'Default') {
+                continue;
+              }
+              \$matrix['include'][] = ['php' => '7.4', 'phpunit' => true, 'phpunit_suite' => \$ts->getAttribute('name')];
+            }
+            if (count(\$matrix) == 0 && \$run['phpunit']) {
+              \$matrix['include'][] = ['php' => '7.4', 'phpunit' => true, 'phpunit_suite' => ''];
+            }
+          }
+          foreach (\$matrix['include'] as \$arr) {
+              \$arr['composer_arg'] ??= ''; 
+          }
+          \$json = json_encode(\$matrix);
+          \$json = preg_replace("#\n +#", "\n", \$json);
+          \$json = str_replace("\n", '', \$json);
+          echo trim(\$json);
+          EOF
+
+          MATRIX_JSON=$(php __matrix.php)
+          echo "MATRIX_JSON: $MATRIX_JSON"
+          rm __matrix.php
+          echo "::set-output name=matrix::${MATRIX_JSON}"
+
+  tests:
+    runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: SS_mysite
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    needs: genmatrix
+
+    strategy:
+      # set fail-fast to false prevent one job from cancelling other jobs
+      fail-fast: false
+      matrix: ${{fromJson(needs.genmatrix.outputs.matrix)}}
+
+    env:
+      artifacts_name: php${{ matrix.php }}_${{ matrix.phpunit && 'phpunit - ' && matrix.phpunit_suite || '' }}${{ matrix.endtoend && 'endtoend' || '' }}${{ matrix.js && 'js' || '' }}${{ matrix.phpcoverage && 'phpcoverage' || '' }}${{ matrix.phplinting && 'phplinting' || '' }}
+
+    name: PHP ${{ matrix.php }}${{ matrix.phpunit && ' - phpunit - ' && matrix.phpunit_suite || '' }}${{ matrix.endtoend && ' - endtoend' || '' }}${{ matrix.js && ' - js' || '' }}${{ matrix.phpcoverage && ' - phpcoverage' || '' }}${{ matrix.phplinting && ' - phplinting' || '' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, xdebug, zip
+          tools: composer:v2
+          coverage: xdebug
+
+      - name: Configure PHP
+        run: |
+          # Set memory limit and disable xdebug if not running phpcoverage
+          if [ ! $(which php) ]; then echo "PHP not installed, skipping" && exit 0; fi
+          sudo sh -c "echo 'memory_limit = 8196M' >> /etc/php/${{ matrix.php }}/cli/php.ini"
+          if [ -f /etc/php/${{ matrix.php }}/apache2/php.ini ]; then
+            sudo sh -c "echo 'memory_limit = 8196M' >> /etc/php/${{ matrix.php }}/apache2/php.ini"
+          fi
+          # Disable xdebug which greatly slow down unit testing
+          # Note: omitting xdebug from shivammathur/setup-php still results in xdebug being installed and enabled
+          if ! [ ${{ matrix.phpcoverage }} ]; then
+            sudo sh -c "echo ';zend_extension=xdebug.so' > /etc/php/${{ matrix.php }}/mods-available/xdebug.ini"
+          fi
+          echo "PHP has been configured"
+
+      - name: Apt install additional requirements 
+        run: |
+          # apt install extra requirements as required
+          if [ ${{ matrix.endtoend }} ]; then
+            sudo apt install -y software-properties-common
+            sudo add-apt-repository -y ppa:ondrej/php
+            sudo add-apt-repository -y ppa:ondrej/apache2
+            sudo apt update
+            sudo apt install libapache2-mod-php${{ matrix.php }}
+          fi
+          if [[ ${{ github.repository }} =~ /(spellcheck|recipe-authoring-tools)$ ]] || [ ${{ matrix.phpunit_suite }} == recipe-authoring-tools ]; then
+            sudo apt install -y hunspell libhunspell-dev hunspell-en-us
+          fi
+
+      # This is shared between runs, not just jobs. It means the first time the repo runs the job it'll
+      # need to download requirements for the first time, after that it will be plenty quick
+      # https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows
+      - name: Enable shared composer cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/composer
+          key: shared-composer-cache
+
+      - name: Composer
+        run: |
+          if [ ! $(which php) ]; then echo "PHP not installed, skipping" && exit 0; fi
+          # Update composer.json and install dependencies
+          # github.base_ref is only available on pull-requests and is the target branch
+          # github.ref is used for regular branch builds such as crons
+          BRANCH=$(php -r "echo preg_replace('#^.+/#', '', '${{ github.base_ref }}'?:'${{ github.ref }}');")
+          if [[ "$BRANCH" =~ ^[1-9]$ ]] || [[ "$BRANCH" =~ ^[1-9]\.[0-9]+$ ]]; then export COMPOSER_ROOT_VERSION="${BRANCH}.x-dev"; elif [[ "$BRANCH" =~ ^[1-9]\.[0-9]+\.[0-9]+ ]]; then export COMPOSER_ROOT_VERSION="${BRANCH}"; else export COMPOSER_ROOT_VERSION="dev-${BRANCH}"; fi
+          echo "COMPOSER_ROOT_VERSION is $COMPOSER_ROOT_VERSION"
+          # TODO: hardcoded to installer, need to allow "self" for recipes/installer runs
+          INSTALLER_VERSION=4.x-dev
+          if [[ "$COMPOSER_ROOT_VERSION" =~ "x-dev" ]]; then INSTALLER_VERSION=$(php -r "echo preg_replace('/^[0-9]+/', '4', '$COMPOSER_ROOT_VERSION');"); fi
+          echo "INSTALLER_VERSION is $INSTALLER_VERSION"
+          composer require silverstripe/installer:$INSTALLER_VERSION --no-update
+          composer require silverstripe/recipe-testing:^1 --no-update
+          # TODO: graphql4 endtoend tests
+          composer require silverstripe/graphql:^3 --no-update
+          if [ ${{ matrix.phplinting }} ]; then
+            composer require silverstripe/cow:dev-master --no-update
+          fi
+          if [ "${{ inputs.require_extra }}" != "" ]; then
+            composer require "${{ inputs.require_extra }}" --no-update
+          fi
+          # Need to use --prefer-source
+          # TODO: remove once php8 support is official
+          if [ "${{ matrix.php }}" == "8.0" ]; then
+            composer update --prefer-source --no-interaction --no-progress --ignore-platform-reqs ${{ matrix.composer_arg }}
+          else
+            composer update --prefer-source --no-interaction --no-progress ${{ matrix.composer_arg }}
+          fi
+
+      - name: Code modification
+        run: |
+          REMOTE_FILE=https://github.com/silverstripe/silverstripe-framework/blob/458596ffe59e8801d19e3e73a90d8559e2be51ac/src/Control/Director.php
+          LOCAL_FILE=vendor/silverstripe/framework/src/Control/Director.php
+          wget $REMOTE_FILE -O $LOCAL_FILE
+
+      - name: Final preparation
+        run: |
+          # Add .env file and create artifacts directory
+          cat << EOF > .env
+          SS_ENVIRONMENT_TYPE="dev"
+          SS_DATABASE_CLASS="MySQLDatabase"
+          SS_DATABASE_SERVER="127.0.0.1"
+          SS_DATABASE_USERNAME="root"
+          SS_DATABASE_PASSWORD="root"
+          SS_DATABASE_NAME="SS_mysite"
+          SS_DEFAULT_ADMIN_USERNAME="admin"
+          SS_DEFAULT_ADMIN_PASSWORD="password"
+          SS_TRUSTED_PROXY_IPS="*"
+          SS_MFA_SECRET_KEY="1234567894175b99966561e1efe237e4"
+          SS_BASE_URL="http://localhost"
+          EOF
+
+          # Artifacts directory must be created after composer install as it would remove the artifacts directory
+          mkdir artifacts
+          # Shouldn't dev/build flush here
+          # There were issues with a unit test getting the following issue
+          # Identifier name 'SilverStripe_CampaignAdmin_Tests_AddToCampaignValidatorTest_TestObject' is too long
+          # Likely because the /tmp/silverstripe-cache-php7.4.xyz... dir being out of sync with TestOnly objects
+          # If dev/build flush is needed here then delete the silverstripe-cache dir afterwards
+
+      - name: Run tests
+        run: |
+          # Run the tests for the matrix entry
+
+          if [ ${{ matrix.phpunit }} ]; then
+            if [ "${{ matrix.phpunit_suite }}" == "" ]; then
+              vendor/bin/phpunit --verbose
+            else
+              vendor/bin/phpunit --verbose --testsuite ${{ matrix.phpunit_suite }}
+            fi
+            echo "Passed"
+          fi
+
+      - name: Copy artifacts
+        if: always()
+        run: |
+          # Copy selected files to the artifacts dir
+          if [ -f composer.json ]; then cp composer.json artifacts; fi
+          if [ -f composer.lock ]; then cp composer.lock artifacts; fi
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: ${{ env.artifacts_name }}
+          path: artifacts
