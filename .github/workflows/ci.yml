@@ -7,5 +7,77 @@ on:
 jobs:
   ci:
     uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic2
+    with:
+      simple_matrix: true
+      extra_jobs: |
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'silverstripe-elemental'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'silverstripe-elemental-userforms'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'admin'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'asset-admin'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'blog'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'campaign-admin'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'ckan-registry'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'cms'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'contentreview'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'elemental-bannerblock'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'elemental-fileblock'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'externallinks'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'mfa'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'securityreport'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'session-manager'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'sharedraftcontent'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'siteconfig'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'sitewidecontent-report'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'subsites'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'taxonomy'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'totp-authenticator'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'userforms'
+        - php: '7.4'
+          endtoend: true
+          endtoend_suite: 'versioned-admin'
 
 # manual retrigger .
