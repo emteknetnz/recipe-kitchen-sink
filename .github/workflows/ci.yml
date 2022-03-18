@@ -8,4 +8,4 @@ jobs:
   ci:
     uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic2
 
-// manual retrigger .
+# manual retrigger .
