@@ -6,7 +6,7 @@
     "license": "BSD-3-Clause",
     "require": {
         
-        "symbiote/silverstripe-queuedjobs": "4.x-dev",
+        "silverstripe/graphql": "dev-master",
         
         "php": "^7.3 || ^8.0",
         "silverstripe/recipe-plugin": "^1",
