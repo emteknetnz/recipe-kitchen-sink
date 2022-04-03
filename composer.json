@@ -47,7 +47,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-admin"
+            "url": "https://github.com/creative-commoners/silverstripe-admin.git"
         }
     ],
     "require-dev": {
