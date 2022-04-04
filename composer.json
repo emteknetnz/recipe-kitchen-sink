@@ -6,7 +6,8 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": "^7.3 || ^8.0",
-        "silverstripe/recipe-plugin": "^1",
+        "silverstripe/recipe-plugin": "1.x-dev",
+
         "silverstripe/installer": "4.x-dev",
         "silverstripe/recipe-authoring-tools": "1.x-dev",
         "silverstripe/recipe-blog": "1.x-dev",
@@ -40,12 +41,15 @@
         "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
-        "tractorcow/silverstripe-fluent": "4.x-dev"
-    },
-    "require-dev": {
+        "tractorcow/silverstripe-fluent": "4.x-dev",
+
         "silverstripe/frameworktest": "4.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",
-        "silverstripe/recipe-testing": "^2",
+        "silverstripe/recipe-testing": "2.x-dev",
+
+        "silverstripe/graphql": "3.x-dev"
+    },
+    "require-dev": {
         "mikey179/vfsstream": "^1.6"
     },
     "extra": {

@@ -161,8 +161,3 @@ jobs:
         with:
           phpunit: ${{ matrix.phpunit }}
           phpunit_suite: ${{ matrix.phpunit_suite }}
-          endtoend: false
-          endtoend_suite: false
-          js: false
-          phplinting: false
-          phpcoverage: false
