@@ -141,7 +141,13 @@ jobs:
           SS_BASE_URL="http://localhost"
           EOF
           
-          vendor/bin/sake dev/build flush=1
+          # Don't actually need to dev/build flush=1 here, is more for debugging
+          # vendor/bin/sake dev/build flush=1
+          # Is failing on 
+          # * SilverStripe\ErrorPage\ErrorPage
+          # ERROR [Emergency]: Uncaught Error: Call to undefined method SilverStripe\Core\Manifest\VersionProvider::singleton()
+          # IN GET dev/build
+          # Line 1496 in /home/runner/work/recipe-kitchen-sink/recipe-kitchen-sink/vendor/silverstripe/cms/code/Model/SiteTree.php
           
           # Delete the silverstripe-cache dir - it will automatically recreate when needed
           # There were issues with a unit test getting the following issue
