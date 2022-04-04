@@ -96,12 +96,12 @@ jobs:
                 cd $DIR
                 ORIGIN=$(git config --get remote.origin.url)
                 if ! [ -z "$ORIGIN" ]; then
-                  CCS_REMOTE=$(php -r "echo str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'], 'creative-commoners/', '$ORIGIN');")
+                  CCS_REMOTE=$(php -r "$s=str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'], 'creative-commoners/', '$ORIGIN');$s=str_replace('https://github.com/','git@github.com:',$s);echo $s;")
                   git remote add ccs $CCS_REMOTE
                   git fetch ccs
                   BRANCH=$(git rev-parse --abbrev-ref HEAD)
                   NEW_BRANCH=pulls/$BRANCH/php81
-                  if ! [ -z $(git show-branch remotes/ccs/$NEW_BRANCH) ]; then
+                  if ! [ -z $(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null) ]; then
                     git checkout $NEW_BRANCH
                     git log -1
                   fi
