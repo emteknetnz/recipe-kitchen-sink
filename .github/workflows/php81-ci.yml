@@ -96,7 +96,7 @@ jobs:
                 cd $DIR
                 ORIGIN=$(git config --get remote.origin.url)
                 if ! [ -z "$ORIGIN" ]; then
-                  CCS_REMOTE=$(php -r "echo str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'], 'creative-commoners', '$ORIGIN');")
+                  CCS_REMOTE=$(php -r "echo str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'], 'creative-commoners/', '$ORIGIN');")
                   git remote add ccs $CCS_REMOTE
                   git fetch ccs
                   BRANCH=$(git rev-parse --abbrev-ref HEAD)
