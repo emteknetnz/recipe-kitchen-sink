@@ -144,9 +144,11 @@ jobs:
           # run dev/build flush to help debug any issues (though it's not strictly required here)
           # travis-shared has no reference to sake, so it should be safe to omit dev/build flush=1
           # normal module
-          if [ -f vendor/bin/sake ]; then vendor/bin/sake dev/build flush=1; fi
-          # framework module
-          if [ -f sake ]; then ./sake dev/build flush=1; fi
+          # commenting out because was getting
+          # ERROR [Emergency]: Uncaught Error: Call to undefined method SilverStripe\Core\Manifest\VersionProvider::singleton()
+          # IN GET dev/build
+          # Line 1496 in /home/runner/work/recipe-kitchen-sink/recipe-kitchen-sink/vendor/silverstripe/cms/code/Model/SiteTree.php
+          # if [ -f vendor/bin/sake ]; then vendor/bin/sake dev/build flush=1; fi
           
           # Delete the silverstripe-cache dir - it will automatically recreate when needed
           # There were issues with a unit test getting the following issue
