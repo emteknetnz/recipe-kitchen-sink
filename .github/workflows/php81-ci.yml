@@ -159,5 +159,5 @@ jobs:
       - name: Run tests
         uses: emteknetnz/gha-run-tests@main
         with:
-          phpunit: ${{ matrix.phpunit }}
+          phpunit: true
           phpunit_suite: ${{ matrix.phpunit_suite }}
