@@ -88,11 +88,27 @@ jobs:
 
       - name: Manually checkout branches from creative-commoners
         run: |
-          cd vendor/silverstripe/assets
-          git remote add ccs git@github.com:creative-commoners/silverstripe-assets.git
-          git fetch ccs
-          git checkout pulls/1/php81-b
-          git log -1
+          PWD=$(pwd)
+          for VENDOR in silverstripe cwp dnadesign symbiote bringyourownideas tractorcow colymba; do
+            for DIR in $PWD/vendor/$VENDOR/*; do
+              if [ -d $DIR ]; then
+                echo "Processing $DIR"
+                cd $DIR
+                ORIGIN=$(git config --get remote.origin.url)
+                if ! [ -z "$ORIGIN" ]; then
+                  CCS_REMOTE=$(php -r "echo str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'], 'creative-commoners', '$ORIGIN');")
+                  git remote add ccs $CCS_REMOTE
+                  git fetch ccs
+                  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+                  NEW_BRANCH=pulls/$BRANCH/php81
+                  if ! [ -z $(git show-branch remotes/ccs/$NEW_BRANCH) ]; then
+                    git checkout $NEW_BRANCH
+                    git log -1
+                  fi
+                fi
+              fi
+            done
+          done
 
       - name: Final preparation
         run: |
