@@ -40,16 +40,8 @@
         "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
-        "tractorcow/silverstripe-fluent": "4.x-dev",
-
-        "silverstripe/admin": "dev-pulls/1/eslint as 1.x-dev"
+        "tractorcow/silverstripe-fluent": "4.x-dev"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-admin.git"
-        }
-    ],
     "require-dev": {
         "silverstripe/frameworktest": "4.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",

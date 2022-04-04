@@ -1,0 +1,136 @@
+name: php81-ci
+
+on:
+  push:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      # set fail-fast to false prevent one job from cancelling other jobs
+      fail-fast: false
+      matrix:
+        include:
+          - php: 7.4
+            phpunit_suite: recipe-core
+          - php: 8.1
+            phpunit_suite: recipe-core
+
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: SS_mysite
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+    name: PHP ${{ matrix.php }} ${{ matrix.phpunit_suite }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, xdebug, zip
+          tools: composer:v2
+          coverage: xdebug
+        # While this should be the correct way to allow forks in composer.json repositories
+        # in practice there are still many sporadic "Could not authenticate against github.com" errors
+        # there's 1,000 requests per hour limit when using this token, likely it get exceeded
+        # fairly easily when using a fork with multiple jobs in a matrix
+        #env:
+        #  COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure PHP
+        run: |
+          # Set memory limit and disable xdebug if not running phpcoverage
+          if [ ! $(which php) ]; then echo "PHP not installed, skipping" && exit 0; fi
+          # github linux runners have 7GB of RAM
+          # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+          # Set a high memory limit, particularly for php coverage tests
+          PHP_MEMORY_LIMIT=6144M
+          echo "PHP_MEMORY_LIMIT is $PHP_MEMORY_LIMIT"
+          sudo sh -c "echo 'memory_limit = $PHP_MEMORY_LIMIT' >> /etc/php/${{ matrix.php }}/cli/php.ini"
+          if [ -f /etc/php/${{ matrix.php }}/apache2/php.ini ]; then
+            sudo sh -c "echo 'memory_limit = $PHP_MEMORY_LIMIT' >> /etc/php/${{ matrix.php }}/apache2/php.ini"
+          fi
+          # Disable xdebug which greatly slow down unit testing
+          # Note: omitting xdebug from shivammathur/setup-php still results in xdebug being installed and enabled
+          sudo sh -c "echo ';zend_extension=xdebug.so' > /etc/php/${{ matrix.php }}/mods-available/xdebug.ini"
+          echo "PHP has been configured"
+
+      - name: Apt install additional requirements 
+        run: |
+          sudo apt install -y hunspell libhunspell-dev hunspell-en-us
+
+      # This is shared between runs, not just jobs. It means the first time the repo runs the job it'll
+      # need to download requirements for the first time, after that it will be plenty quick
+      # https://docs.github.com/en/actions/advanced-guides/caching-dependencies-to-speed-up-workflows
+      - name: Enable shared composer cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/composer
+          key: shared-composer-cache
+
+      - name: Composer
+        run: |
+          COMPOSER_ROOT_VERSION=4.x-dev
+          composer require mikey179/vfsstream:^1 --dev --no-update
+          cat composer.json
+          composer update --prefer-source --no-interaction --no-progress
+
+      - name: Manually checkout branches from creative-commoners
+        run: |
+          cd vendor/silverstripe/framework
+          git remote add ccs git@github.com:creative-commoners/silverstripe-framework.git
+          git fetch
+          git checkout pulls/4/php81
+          git log -1
+
+      - name: Final preparation
+        run: |
+          # Add .env file and create artifacts directory
+          cat << EOF > .env
+          SS_ENVIRONMENT_TYPE="dev"
+          SS_DATABASE_CLASS="MySQLDatabase"
+          SS_DATABASE_SERVER="127.0.0.1"
+          SS_DATABASE_USERNAME="root"
+          SS_DATABASE_PASSWORD="root"
+          SS_DATABASE_NAME="SS_mysite"
+          SS_DEFAULT_ADMIN_USERNAME="admin"
+          SS_DEFAULT_ADMIN_PASSWORD="password"
+          SS_TRUSTED_PROXY_IPS="*"
+          SS_MFA_SECRET_KEY="1234567894175b99966561e1efe237e4"
+          SS_BASE_URL="http://localhost"
+          EOF
+          
+          # run dev/build flush to help debug any issues (though it's not strictly required here)
+          # travis-shared has no reference to sake, so it should be safe to omit dev/build flush=1
+          # normal module
+          if [ -f vendor/bin/sake ]; then vendor/bin/sake dev/build flush=1; fi
+          # framework module
+          if [ -f sake ]; then ./sake dev/build flush=1; fi
+          
+          # Delete the silverstripe-cache dir - it will automatically recreate when needed
+          # There were issues with a unit test getting the following issue
+          # Identifier name 'SilverStripe_CampaignAdmin_Tests_AddToCampaignValidatorTest_TestObject' is too long
+          # Likely because the /tmp/silverstripe-cache-php7.4.xyz... dir being out of sync with TestOnly objects
+          rm -rf $(find /tmp -maxdepth 1 | grep silverstripe-cache)
+
+      - name: Run tests
+        uses: emteknetnz/gha-run-tests@main
+        with:
+          phpunit: ${{ matrix.phpunit }}
+          phpunit_suite: ${{ matrix.phpunit_suite }}
+          endtoend: false
+          endtoend_suite: false
+          js: false
+          phplinting: false
+          phpcoverage: false
