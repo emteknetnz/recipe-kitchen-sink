@@ -88,10 +88,10 @@ jobs:
 
       - name: Manually checkout branches from creative-commoners
         run: |
-          cd vendor/silverstripe/framework
-          git remote add ccs git@github.com:creative-commoners/silverstripe-framework.git
-          git fetch
-          git checkout pulls/4/php81
+          cd vendor/silverstripe/assets
+          git remote add ccs git@github.com:creative-commoners/silverstripe-assets.git
+          git fetch ccs
+          git checkout pulls/1/php81-b
           git log -1
 
       - name: Final preparation
