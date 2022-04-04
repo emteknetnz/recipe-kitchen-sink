@@ -2,6 +2,7 @@ name: php81-ci
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   tests:
