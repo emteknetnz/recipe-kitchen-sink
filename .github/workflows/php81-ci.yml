@@ -106,7 +106,7 @@ jobs:
                     BRANCH=$(git rev-parse --abbrev-ref HEAD)
                     if [ "$BRANCH" != "HEAD" ]; then
                       NEW_BRANCH=pulls/$BRANCH/php81
-                      if ! [ -z $(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null) ]; then
+                      if ! [ -z "$(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null)" ]; then
                         git checkout $NEW_BRANCH
                         git log -1
                       else
