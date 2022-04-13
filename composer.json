@@ -23,7 +23,6 @@
         "silverstripe/totp-authenticator": "4.x-dev",
         "silverstripe/mfa": "4.x-dev",
         "silverstripe/crontask": "2.x-dev",
-        "silverstripe/gridfieldqueuedexport": "2.x-dev",
         "silverstripe/ldap": "1.x-dev",
 
         "silverstripe/textextraction": "3.x-dev",
@@ -47,7 +46,29 @@
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "2.x-dev",
 
-        "silverstripe/graphql": "3.x-dev"
+        "silverstripe/graphql": "3.x-dev",
+
+
+        "silverstripe/behat-extension": "4.x-dev",
+        "silverstripe/mink-facebook-web-driver": "1.x-dev",
+        "silverstripe/vendor-plugin": "1.x-dev",
+        "symbiote/silverstripe-gridfieldextensions": "3.x-dev",
+        "silverstripe/serve": "2.x-dev",
+        "silverstripe/testsession": "2.x-dev",
+        "silverstripe/auditor": "2.x-dev",
+        "silverstripe/environmentcheck": "2.x-dev",
+        "silverstripe/hybridsessions": "2.x-dev",
+        "silverstripe/lumberjack": "2.x-dev",
+        "cwp/cwp-core": "2.x-dev",
+        "symbiote/silverstripe-queuedjobs": "4.x-dev",
+        "colymba/gridfield-bulk-editing-tools": "3.x-dev",
+        "silverstripe/fulltextsearch": "3.x-dev as 3.9.x-dev",
+        "cwp/cwp-search": "1.x-dev as 1.6.x-dev",
+        "tractorcow/classproxy": "dev-master as 0.1.99",
+        "tractorcow/silverstripe-proxy-db": "dev-master as 0.1.99",
+        "silverstripe/gridfieldqueuedexport": "2.x-dev",
+        "bringyourownideas/silverstripe-composer-update-checker": "2.x-dev"
+
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.6"
