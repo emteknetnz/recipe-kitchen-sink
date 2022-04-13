@@ -15,67 +15,35 @@ jobs:
         include:
           - php: 7.4
             phpunit_suite: recipe-core
-          - php: 8.1
-            phpunit_suite: recipe-core
           - php: 7.4
-            phpunit_suite: framework-orm
-          - php: 8.1
             phpunit_suite: framework-orm
           - php: 7.4
             phpunit_suite: framework-core
-          - php: 8.1
-            phpunit_suite: framework-core
           - php: 7.4
-            phpunit_suite: recipe-cms
-          - php: 8.1
             phpunit_suite: recipe-cms
           - php: 7.4
             phpunit_suite: cwp-recipe-core
-          - php: 8.1
-            phpunit_suite: cwp-recipe-core
           - php: 7.4
-            phpunit_suite: cwp-recipe-cms
-          - php: 8.1
             phpunit_suite: cwp-recipe-cms
           - php: 7.4
             phpunit_suite: cwp-recipe-search
-          - php: 8.1
-            phpunit_suite: cwp-recipe-search
           - php: 7.4
-            phpunit_suite: recipe-authoring-tools
-          - php: 8.1
             phpunit_suite: recipe-authoring-tools
           - php: 7.4
             phpunit_suite: recipe-blog
-          - php: 8.1
-            phpunit_suite: recipe-blog
           - php: 7.4
-            phpunit_suite: recipe-collaboration
-          - php: 8.1
             phpunit_suite: recipe-collaboration
           - php: 7.4
             phpunit_suite: recipe-content-blocks
-          - php: 8.1
-            phpunit_suite: recipe-content-blocks
           - php: 7.4
-            phpunit_suite: recipe-form-building
-          - php: 8.1
             phpunit_suite: recipe-form-building
           - php: 7.4
             phpunit_suite: recipe-reporting-tools
-          - php: 8.1
-            phpunit_suite: recipe-reporting-tools
           - php: 7.4
-            phpunit_suite: recipe-services
-          - php: 8.1
             phpunit_suite: recipe-services
           - php: 7.4
             phpunit_suite: optional-authenticators
-          - php: 8.1
-            phpunit_suite: optional-authenticators
           - php: 7.4
-            phpunit_suite: mfa
-          - php: 8.1
             phpunit_suite: mfa
 
     services:
@@ -147,43 +115,6 @@ jobs:
           cat composer.json
           composer config --no-plugins allow-plugins.composer/installers true
           composer update --prefer-source --no-interaction --no-progress
-
-      - name: Manually checkout branches from creative-commoners
-        run: |
-          PWD=$(pwd)
-          for VENDOR in silverstripe cwp dnadesign symbiote bringyourownideas tractorcow colymba; do
-            for DIR in $PWD/vendor/$VENDOR/*; do
-              if [ -d $DIR ]; then
-                echo "Processing $DIR"
-                cd $DIR
-                ORIGIN=$(git config --get remote.origin.url)
-                if ! [ -z "$ORIGIN" ]; then
-                  CCS_REMOTE=$(php -r "\$s=str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/'],'creative-commoners/', '$ORIGIN');\$s=str_replace(['git@github.com:','.git'],['https://github.com/',''],\$s);echo \$s;")
-                  CODE=$(curl -s -o /dev/null -w "%{http_code}" $CCS_REMOTE)
-                  if [ "$CODE" == "200" ]; then
-                    git remote add ccs $CCS_REMOTE
-                    git fetch ccs
-                    BRANCH=$(git rev-parse --abbrev-ref HEAD)
-                    if [ "$BRANCH" != "HEAD" ]; then
-                      NEW_BRANCH=pulls/$BRANCH/php81
-                      if ! [ -z "$(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null)" ]; then
-                        git checkout $NEW_BRANCH
-                        git log -1
-                      else
-                        echo "Branch $NEW_BRANCH does not exist, continuing..."
-                      fi
-                    else
-                      echo "Using non-dev branch, continuing..."
-                    fi
-                  else
-                    echo "Remote $CCS_REMOTE does not exist, continuing..."
-                  fi
-                else
-                  echo "No origin for $DIR, continuing..."
-                fi
-              fi
-            done
-          done
 
       - name: Final preparation
         run: |
