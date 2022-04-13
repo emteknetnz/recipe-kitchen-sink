@@ -144,8 +144,8 @@ jobs:
         run: |
           COMPOSER_ROOT_VERSION=4.x-dev
           composer require mikey179/vfsstream:^1 --dev --no-update
-          cat composer.json
           composer config --no-plugins allow-plugins.composer/installers true
+          cat composer.json
           composer update --prefer-source --no-interaction --no-progress
 
       - name: Manually checkout branches from creative-commoners
