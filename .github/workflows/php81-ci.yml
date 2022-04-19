@@ -150,9 +150,9 @@ jobs:
 
       - name: Manually checkout branches from creative-commoners
         run: |
-          PWD=$(pwd)
+          MYDIR=$(pwd)
           for VENDOR in silverstripe cwp dnadesign symbiote bringyourownideas tractorcow colymba; do
-            for DIR in $PWD/vendor/$VENDOR/*; do
+            for DIR in $MYDIR/vendor/$VENDOR/*; do
               if [ -d $DIR ]; then
                 echo "Processing $DIR"
                 cd $DIR
