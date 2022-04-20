@@ -160,23 +160,19 @@ jobs:
                 if ! [ -z "$ORIGIN" ]; then
                   CCS_REMOTE=$(php -r "\$s=str_replace(['silverstripe/','dnadesign/','symbiote/','bringyourownideas/','tractorcow/','tractorcow-farm/','colymba/','cwp/'],'creative-commoners/', '$ORIGIN');\$s=str_replace(['git@github.com:','.git'],['https://github.com/',''],\$s);echo \$s;")
                   CODE=$(curl -s -o /dev/null -w "%{http_code}" $CCS_REMOTE)
-                  if [ "$CODE" == "200" ]; then
-                    git remote add ccs $CCS_REMOTE
-                    git fetch ccs
-                    BRANCH=$(git rev-parse --abbrev-ref HEAD)
-                    if [ "$BRANCH" != "HEAD" ]; then
-                      NEW_BRANCH=pulls/$BRANCH/php81
-                      if ! [ -z "$(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null)" ]; then
-                        git checkout $NEW_BRANCH
-                        git log -1
-                      else
-                        echo "Branch $NEW_BRANCH does not exist, continuing..."
-                      fi
+                  git remote add ccs $CCS_REMOTE
+                  git fetch ccs 2> /dev/null
+                  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+                  if [ "$BRANCH" != "HEAD" ]; then
+                    NEW_BRANCH=pulls/$BRANCH/php81
+                    if ! [ -z "$(git show-branch remotes/ccs/$NEW_BRANCH 2> /dev/null)" ]; then
+                      git checkout $NEW_BRANCH
+                      git log -1
                     else
-                      echo "Using non-dev branch, continuing..."
+                      echo "Branch $NEW_BRANCH does not exist, continuing..."
                     fi
                   else
-                    echo "Remote $CCS_REMOTE does not exist, continuing..."
+                    echo "Using non-dev branch, continuing..."
                   fi
                 else
                   echo "No origin for $DIR, continuing..."
