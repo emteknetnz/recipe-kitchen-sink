@@ -67,7 +67,7 @@
         "tractorcow/classproxy": "dev-master as 0.1.99",
         "tractorcow/silverstripe-proxy-db": "dev-master as 0.1.99",
         "silverstripe/gridfieldqueuedexport": "2.x-dev",
-        "bringyourownideas/silverstripe-composer-update-checker": "2.x-dev"
+        "bringyourownideas/silverstripe-composer-update-checker": "3.x-dev"
 
     },
     "require-dev": {
