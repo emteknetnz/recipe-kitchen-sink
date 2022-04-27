@@ -13,68 +13,68 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - php: 7.4
-            phpunit_suite: recipe-core
+#           - php: 7.4
+#             phpunit_suite: recipe-core
           - php: 8.1
             phpunit_suite: recipe-core
-          - php: 7.4
-            phpunit_suite: framework-orm
+#           - php: 7.4
+#             phpunit_suite: framework-orm
           - php: 8.1
             phpunit_suite: framework-orm
-          - php: 7.4
-            phpunit_suite: framework-core
+#           - php: 7.4
+#             phpunit_suite: framework-core
           - php: 8.1
             phpunit_suite: framework-core
-          - php: 7.4
-            phpunit_suite: recipe-cms
+#           - php: 7.4
+#             phpunit_suite: recipe-cms
           - php: 8.1
             phpunit_suite: recipe-cms
-          - php: 7.4
-            phpunit_suite: cwp-recipe-core
+#           - php: 7.4
+#             phpunit_suite: cwp-recipe-core
           - php: 8.1
             phpunit_suite: cwp-recipe-core
-          - php: 7.4
-            phpunit_suite: cwp-recipe-cms
+#           - php: 7.4
+#             phpunit_suite: cwp-recipe-cms
           - php: 8.1
             phpunit_suite: cwp-recipe-cms
-          - php: 7.4
-            phpunit_suite: cwp-recipe-search
+#           - php: 7.4
+#             phpunit_suite: cwp-recipe-search
           - php: 8.1
             phpunit_suite: cwp-recipe-search
-          - php: 7.4
-            phpunit_suite: recipe-authoring-tools
+#           - php: 7.4
+#             phpunit_suite: recipe-authoring-tools
           - php: 8.1
             phpunit_suite: recipe-authoring-tools
-          - php: 7.4
-            phpunit_suite: recipe-blog
+#           - php: 7.4
+#             phpunit_suite: recipe-blog
           - php: 8.1
             phpunit_suite: recipe-blog
-          - php: 7.4
-            phpunit_suite: recipe-collaboration
+#           - php: 7.4
+#             phpunit_suite: recipe-collaboration
           - php: 8.1
             phpunit_suite: recipe-collaboration
-          - php: 7.4
-            phpunit_suite: recipe-content-blocks
+#           - php: 7.4
+#             phpunit_suite: recipe-content-blocks
           - php: 8.1
             phpunit_suite: recipe-content-blocks
-          - php: 7.4
-            phpunit_suite: recipe-form-building
+#           - php: 7.4
+#             phpunit_suite: recipe-form-building
           - php: 8.1
             phpunit_suite: recipe-form-building
-          - php: 7.4
-            phpunit_suite: recipe-reporting-tools
+#           - php: 7.4
+#             phpunit_suite: recipe-reporting-tools
           - php: 8.1
             phpunit_suite: recipe-reporting-tools
-          - php: 7.4
-            phpunit_suite: recipe-services
+#           - php: 7.4
+#             phpunit_suite: recipe-services
           - php: 8.1
             phpunit_suite: recipe-services
-          - php: 7.4
-            phpunit_suite: optional-authenticators
+#           - php: 7.4
+#             phpunit_suite: optional-authenticators
           - php: 8.1
             phpunit_suite: optional-authenticators
-          - php: 7.4
-            phpunit_suite: mfa
+#           - php: 7.4
+#             phpunit_suite: mfa
           - php: 8.1
             phpunit_suite: mfa
 
@@ -218,3 +218,4 @@ jobs:
         with:
           phpunit: true
           phpunit_suite: ${{ matrix.phpunit_suite }}
+          phpunit_fail_on_warning: true
