@@ -1,83 +1,81 @@
-name: Module CI
+name: CI
 
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   ci:
     uses: emteknetnz/github-actions-ci-cd/.github/workflows/ci.yml@dynamic2
     with:
-      simple_matrix: true
       extra_jobs: |
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'silverstripe-elemental'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'silverstripe-elemental-userforms'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'admin'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'asset-admin'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'blog'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'campaign-admin'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'ckan-registry'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'cms'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'contentreview'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'elemental-bannerblock'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'elemental-fileblock'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'externallinks'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'mfa'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'securityreport'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'session-manager'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'sharedraftcontent'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'siteconfig'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'sitewidecontent-report'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'subsites'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'taxonomy'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'totp-authenticator'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'userforms'
-        - php: '8.0'
+        - php: '8.1'
           endtoend: true
           endtoend_suite: 'versioned-admin'
-
-# manual retrigger .
