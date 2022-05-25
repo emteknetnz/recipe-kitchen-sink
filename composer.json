@@ -4,11 +4,7 @@
     "description": "Internal testing Silverstripe CMS recipe for all modules, optional and suggested",
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
-    "require": {
-        
-        "emteknetnz/type-transitioner": "dev-main",
-        "silverstripe/graphql": "dev-master",
-        
+    "require": {        
         "php": "^7.3 || ^8.0",
         "silverstripe/recipe-plugin": "^1",
         "silverstripe/installer": "4.x-dev",
