@@ -67,6 +67,9 @@
         ]
     },
     "config": {
+        "platform": {
+            "php": "7.4"
+        },
         "process-timeout": 600,
         "allow-plugins": {
             "composer/installers": true,
