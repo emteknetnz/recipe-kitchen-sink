@@ -41,7 +41,15 @@
         "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
-        "tractorcow/silverstripe-fluent": "4.x-dev"
+        "tractorcow/silverstripe-fluent": "4.x-dev",
+
+        "silverstripe/framework": "dev-pulls/4/restore-err as 4.x-dev"
+    },
+    "repositories": {
+        "x1": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-framework"
+        }
     },
     "require-dev": {
         "silverstripe/frameworktest": "^0.4.6",
