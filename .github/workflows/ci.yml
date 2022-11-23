@@ -9,7 +9,7 @@ jobs:
     # Only run cron on the silverstripe account
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
     with:
-      composer_intall: true
+      composer_install: true
       # Use simple_matrix to limit the number of created jobs
       # phpunit.xml.dist has a large number of testsuites, all of which are tested with
       # multiple versions of php + databases in both the modules themselves and other recipes
