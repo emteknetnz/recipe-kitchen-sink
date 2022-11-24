@@ -52,7 +52,15 @@
         "silverstripe/userforms": "dev-pulls/5/stop-using-depr as 5.x-dev",
         "silverstripe/versionfeed": "dev-pulls/2/stop-using-depr as 2.x-dev",
         "symbiote/silverstripe-advancedworkflow": "dev-pulls/5/stop-using-depr as 5.x-dev",
-        "symbiote/silverstripe-queuedjobs": "dev-pulls/4/stop-using-depr as 4.x-dev"
+        "symbiote/silverstripe-queuedjobs": "dev-pulls/4/stop-using-depr as 4.x-dev",
+        "cwp/cwp-core": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/blog": "dev-pulls/3/stop-using-depr as 3.x-dev",
+        "silverstripe/comments": "dev-pulls/3/stop-using-depr as 3.x-dev",
+        "silverstripe/fulltextsearch": "dev-pulls/3/stop-using-depr as 3.x-dev",
+        "silverstripe/spamprotection": "dev-pulls/3/stop-using-depr as 3.x-dev",
+        "silverstripe/spellcheck": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/tagfield": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/versioned": "dev-pulls/1/stop-using-depr as 1.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^0.4.6",
@@ -116,6 +124,38 @@
         "x14": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-queuedjobs"
+        },
+        "x15": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp-core"
+        },
+        "x16": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-blog"
+        },
+        "x17": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-comments"
+        },
+        "x18": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-fulltextsearch"
+        },
+        "x19": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-spamprotection"
+        },
+        "x20": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-spellcheck"
+        },
+        "x21": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-tagfield"
+        },
+        "x22": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned"
         }
     },
     "extra": {

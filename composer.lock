@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bd2681aa28c4dec612288bf0feabd53",
+    "content-hash": "2c15c9d9901f6fb915f80fcba03786a1",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1228,12 +1228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/cwp.git",
-                "reference": "49023734fe0fa5f673b1a08ca504e8797b613b39"
+                "reference": "8d7964d859c408c0ed8fab4cb7ea24ab6bdf8921"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/cwp/zipball/49023734fe0fa5f673b1a08ca504e8797b613b39",
-                "reference": "49023734fe0fa5f673b1a08ca504e8797b613b39",
+                "url": "https://api.github.com/repos/creative-commoners/cwp/zipball/8d7964d859c408c0ed8fab4cb7ea24ab6bdf8921",
+                "reference": "8d7964d859c408c0ed8fab4cb7ea24ab6bdf8921",
                 "shasum": ""
             },
             "require": {
@@ -1280,26 +1280,26 @@
             "support": {
                 "source": "https://github.com/creative-commoners/cwp/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-24T00:02:02+00:00"
+            "time": "2022-11-24T04:31:28+00:00"
         },
         {
             "name": "cwp/cwp-core",
-            "version": "2.11.0",
+            "version": "dev-pulls/2/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/cwp-core.git",
-                "reference": "e381c5f4038d6c979bb92aebfa88cb24698ace02"
+                "url": "https://github.com/creative-commoners/cwp-core.git",
+                "reference": "10b4aeb71dff8cceda89f478d044a2244a941f9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/cwp-core/zipball/e381c5f4038d6c979bb92aebfa88cb24698ace02",
-                "reference": "e381c5f4038d6c979bb92aebfa88cb24698ace02",
+                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/10b4aeb71dff8cceda89f478d044a2244a941f9b",
+                "reference": "10b4aeb71dff8cceda89f478d044a2244a941f9b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.3 || ^8.0",
                 "silverstripe/admin": "^1.10",
-                "silverstripe/auditor": "^2",
+                "silverstripe/auditor": "^2.2.1",
                 "silverstripe/environmentcheck": "^2",
                 "silverstripe/framework": "^4.11",
                 "silverstripe/hybridsessions": "^2"
@@ -1321,7 +1321,6 @@
                     "CWP\\Core\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1331,10 +1330,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/cwp-core/issues",
-                "source": "https://github.com/silverstripe/cwp-core/tree/2.11.0"
+                "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-05-12T22:40:10+00:00"
+            "time": "2022-11-24T04:32:01+00:00"
         },
         {
             "name": "cwp/cwp-pdfexport",
@@ -1597,12 +1595,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "c9f1775d65875bf32f03946c4f4cdec99ed0faef"
+                "reference": "9694a403263b1181562d40288482fbf83cc0407d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/c9f1775d65875bf32f03946c4f4cdec99ed0faef",
-                "reference": "c9f1775d65875bf32f03946c4f4cdec99ed0faef",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/9694a403263b1181562d40288482fbf83cc0407d",
+                "reference": "9694a403263b1181562d40288482fbf83cc0407d",
                 "shasum": ""
             },
             "require": {
@@ -1662,7 +1660,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/4/stop-using-depr"
             },
-            "time": "2022-11-24T00:02:40+00:00"
+            "time": "2022-11-24T04:32:50+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -5433,16 +5431,16 @@
         },
         {
             "name": "silverstripe/blog",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "c407dc0cc2e388d974494401172367cb0e4258d9"
+                "url": "https://github.com/creative-commoners/silverstripe-blog.git",
+                "reference": "e68b7a0987d1d12d5eb44dac15625121e546dcf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/c407dc0cc2e388d974494401172367cb0e4258d9",
-                "reference": "c407dc0cc2e388d974494401172367cb0e4258d9",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-blog/zipball/e68b7a0987d1d12d5eb44dac15625121e546dcf5",
+                "reference": "e68b7a0987d1d12d5eb44dac15625121e546dcf5",
                 "shasum": ""
             },
             "require": {
@@ -5467,7 +5465,6 @@
                 "silverstripe/comments": "This module adds comments to your blog.",
                 "silverstripe/widgets": "Some widgets come with the blog which are compatible with the widgets module."
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
@@ -5482,7 +5479,14 @@
                     "SilverStripe\\Blog\\Tests\\Behat\\Context\\": "tests/behat/src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "vendor/bin/phpcs src/ tests/"
+                ],
+                "lint-clean": [
+                    "vendor/bin/phpcbf src/ tests/"
+                ]
+            },
             "license": [
                 "BSD-2-Clause"
             ],
@@ -5499,10 +5503,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-blog/issues",
-                "source": "https://github.com/silverstripe/silverstripe-blog/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-blog/tree/pulls/3/stop-using-depr"
             },
-            "time": "2022-11-17T10:45:07+00:00"
+            "time": "2022-11-24T04:33:11+00:00"
         },
         {
             "name": "silverstripe/campaign-admin",
@@ -5770,16 +5773,16 @@
         },
         {
             "name": "silverstripe/comments",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-comments.git",
-                "reference": "9bfef9e93199a2ac12b3e2f6948a8aa719d7b084"
+                "url": "https://github.com/creative-commoners/silverstripe-comments.git",
+                "reference": "1915e2af8580481ea4b6d417f51337ffdf4e80f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-comments/zipball/9bfef9e93199a2ac12b3e2f6948a8aa719d7b084",
-                "reference": "9bfef9e93199a2ac12b3e2f6948a8aa719d7b084",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-comments/zipball/1915e2af8580481ea4b6d417f51337ffdf4e80f7",
+                "reference": "1915e2af8580481ea4b6d417f51337ffdf4e80f7",
                 "shasum": ""
             },
             "require": {
@@ -5796,7 +5799,6 @@
                 "ezyang/htmlpurifier": "Standards compliant HTML filter written in PHP",
                 "silverstripe/cms": "The SilverStripe Content Management System"
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
@@ -5811,7 +5813,14 @@
                     "SilverStripe\\Comments\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "vendor/bin/phpcs src/ tests/"
+                ],
+                "fix": [
+                    "vendor/bin/phpcbf src/ tests/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5827,10 +5836,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-comments/issues",
-                "source": "https://github.com/silverstripe/silverstripe-comments/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-comments/tree/pulls/3/stop-using-depr"
             },
-            "time": "2022-11-20T20:52:02+00:00"
+            "time": "2022-11-24T04:33:46+00:00"
         },
         {
             "name": "silverstripe/config",
@@ -6504,12 +6512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-framework.git",
-                "reference": "b0eafd6aa49347e200bbf4aee5a378e541eb7e1f"
+                "reference": "c3c794c6abcda82b682c1470c9947a1c529beaf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/b0eafd6aa49347e200bbf4aee5a378e541eb7e1f",
-                "reference": "b0eafd6aa49347e200bbf4aee5a378e541eb7e1f",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/c3c794c6abcda82b682c1470c9947a1c529beaf6",
+                "reference": "c3c794c6abcda82b682c1470c9947a1c529beaf6",
                 "shasum": ""
             },
             "require": {
@@ -6636,20 +6644,20 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-framework/tree/pulls/4/stop-using-depr"
             },
-            "time": "2022-11-24T00:05:19+00:00"
+            "time": "2022-11-24T04:34:27+00:00"
         },
         {
             "name": "silverstripe/fulltextsearch",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-fulltextsearch.git",
-                "reference": "11ec50e03a5ef42236e8b07bcbc46e724aad5009"
+                "url": "https://github.com/creative-commoners/silverstripe-fulltextsearch.git",
+                "reference": "b5ed2dd238d09bc607b6eb57769fb5074910e927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-fulltextsearch/zipball/11ec50e03a5ef42236e8b07bcbc46e724aad5009",
-                "reference": "11ec50e03a5ef42236e8b07bcbc46e724aad5009",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-fulltextsearch/zipball/b5ed2dd238d09bc607b6eb57769fb5074910e927",
+                "reference": "b5ed2dd238d09bc607b6eb57769fb5074910e927",
                 "shasum": ""
             },
             "require": {
@@ -6671,7 +6679,6 @@
                 "silverstripe/fulltextsearch-localsolr": "Adds a ready-to-use local Solr server for initial development",
                 "symbiote/silverstripe-queuedjobs": "Add background execution of indexing tasks"
             },
-            "default-branch": true,
             "bin": [
                 "bin/fulltextsearch_quickstart"
             ],
@@ -6682,7 +6689,14 @@
                     "SilverStripe\\FullTextSearch\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "phpcs -s src/ tests/"
+                ],
+                "lint-clean": [
+                    "phpcbf src/ tests/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6705,10 +6719,9 @@
                 "sphinx"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-fulltextsearch/issues",
-                "source": "https://github.com/silverstripe/silverstripe-fulltextsearch/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-fulltextsearch/tree/pulls/3/stop-using-depr"
             },
-            "time": "2022-11-20T20:49:27+00:00"
+            "time": "2022-11-24T04:34:42+00:00"
         },
         {
             "name": "silverstripe/graphql",
@@ -7201,12 +7214,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-mfa.git",
-                "reference": "27a5e5f8165b90b608a09309f9c4e92d2deab0ba"
+                "reference": "e116df999cfa1605365dbba6c9d6b540ef945f3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-mfa/zipball/27a5e5f8165b90b608a09309f9c4e92d2deab0ba",
-                "reference": "27a5e5f8165b90b608a09309f9c4e92d2deab0ba",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-mfa/zipball/e116df999cfa1605365dbba6c9d6b540ef945f3d",
+                "reference": "e116df999cfa1605365dbba6c9d6b540ef945f3d",
                 "shasum": ""
             },
             "require": {
@@ -7273,7 +7286,7 @@
                 "issues": "https://github.com/silverstripe/silverstripe-mfa/issues",
                 "source": "https://github.com/creative-commoners/silverstripe-mfa/tree/pulls/4/stop-using-depr"
             },
-            "time": "2022-11-24T00:05:58+00:00"
+            "time": "2022-11-24T04:35:13+00:00"
         },
         {
             "name": "silverstripe/mimevalidator",
@@ -8098,12 +8111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-restfulserver.git",
-                "reference": "6d0421c8f0ef09bfed7600bea8f4a9fc3721eac6"
+                "reference": "5098adcd57017360894ae47c47230f1eef5f306d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-restfulserver/zipball/6d0421c8f0ef09bfed7600bea8f4a9fc3721eac6",
-                "reference": "6d0421c8f0ef09bfed7600bea8f4a9fc3721eac6",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-restfulserver/zipball/5098adcd57017360894ae47c47230f1eef5f306d",
+                "reference": "5098adcd57017360894ae47c47230f1eef5f306d",
                 "shasum": ""
             },
             "require": {
@@ -8144,7 +8157,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-restfulserver/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-24T00:07:56+00:00"
+            "time": "2022-11-24T04:35:21+00:00"
         },
         {
             "name": "silverstripe/security-extensions",
@@ -8625,16 +8638,16 @@
         },
         {
             "name": "silverstripe/spamprotection",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "fc36247598b98e0aa2db4b0a7b3b9a6fa05ba2db"
+                "url": "https://github.com/creative-commoners/silverstripe-spamprotection.git",
+                "reference": "688b438e883c1f88fc63e24eeef77eaa3fd4ba43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/fc36247598b98e0aa2db4b0a7b3b9a6fa05ba2db",
-                "reference": "fc36247598b98e0aa2db4b0a7b3b9a6fa05ba2db",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-spamprotection/zipball/688b438e883c1f88fc63e24eeef77eaa3fd4ba43",
+                "reference": "688b438e883c1f88fc63e24eeef77eaa3fd4ba43",
                 "shasum": ""
             },
             "require": {
@@ -8647,7 +8660,6 @@
                 "silverstripe/versioned": "^1.0",
                 "squizlabs/php_codesniffer": "^3.0"
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
@@ -8660,7 +8672,6 @@
                     "SilverStripe\\SpamProtection\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8680,23 +8691,22 @@
                 "spamprotection"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-spamprotection/issues",
-                "source": "https://github.com/silverstripe/silverstripe-spamprotection/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-spamprotection/tree/pulls/3/stop-using-depr"
             },
-            "time": "2022-08-02T06:58:04+00:00"
+            "time": "2022-11-24T04:36:45+00:00"
         },
         {
             "name": "silverstripe/spellcheck",
-            "version": "2.x-dev",
+            "version": "dev-pulls/2/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-spellcheck.git",
-                "reference": "b1a66fb7d9a0033b5d6ee6afc706299c6af3183d"
+                "url": "https://github.com/creative-commoners/silverstripe-spellcheck.git",
+                "reference": "4dbf01c2b2d8515211433faa80257ae46b417a82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spellcheck/zipball/b1a66fb7d9a0033b5d6ee6afc706299c6af3183d",
-                "reference": "b1a66fb7d9a0033b5d6ee6afc706299c6af3183d",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-spellcheck/zipball/4dbf01c2b2d8515211433faa80257ae46b417a82",
+                "reference": "4dbf01c2b2d8515211433faa80257ae46b417a82",
                 "shasum": ""
             },
             "require": {
@@ -8708,7 +8718,6 @@
                 "silverstripe/versioned": "^1",
                 "squizlabs/php_codesniffer": "^3.0"
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "autoload": {
                 "psr-4": {
@@ -8716,7 +8725,6 @@
                     "SilverStripe\\SpellCheck\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8734,10 +8742,9 @@
                 "spellcheck"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-spellcheck/issues",
-                "source": "https://github.com/silverstripe/silverstripe-spellcheck/tree/2"
+                "source": "https://github.com/creative-commoners/silverstripe-spellcheck/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-20T20:55:59+00:00"
+            "time": "2022-11-24T04:38:07+00:00"
         },
         {
             "name": "silverstripe/subsites",
@@ -8804,16 +8811,16 @@
         },
         {
             "name": "silverstripe/tagfield",
-            "version": "2.x-dev",
+            "version": "dev-pulls/2/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-tagfield.git",
-                "reference": "8822b0f0b5911ccc88f7d8dcd826a00281c1e033"
+                "url": "https://github.com/creative-commoners/silverstripe-tagfield.git",
+                "reference": "dc932bd72ddfd2abf0f5733f03c8d26e5ede9a8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-tagfield/zipball/8822b0f0b5911ccc88f7d8dcd826a00281c1e033",
-                "reference": "8822b0f0b5911ccc88f7d8dcd826a00281c1e033",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-tagfield/zipball/dc932bd72ddfd2abf0f5733f03c8d26e5ede9a8e",
+                "reference": "dc932bd72ddfd2abf0f5733f03c8d26e5ede9a8e",
                 "shasum": ""
             },
             "require": {
@@ -8825,7 +8832,6 @@
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.0"
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
@@ -8838,7 +8844,6 @@
                     "SilverStripe\\TagField\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8857,9 +8862,9 @@
             ],
             "support": {
                 "issues": "http://github.com/silverstripe/silverstripe-tagfield/issues",
-                "source": "https://github.com/silverstripe/silverstripe-tagfield/tree/2"
+                "source": "https://github.com/creative-commoners/silverstripe-tagfield/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-20T20:57:33+00:00"
+            "time": "2022-11-24T04:39:57+00:00"
         },
         {
             "name": "silverstripe/taxonomy",
@@ -9049,12 +9054,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-userforms.git",
-                "reference": "43cd497a74d8018fea0fc07aeabecb107bf4e1e5"
+                "reference": "b6441501d5bc18a193e26cf8d74d139ad810fc75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/43cd497a74d8018fea0fc07aeabecb107bf4e1e5",
-                "reference": "43cd497a74d8018fea0fc07aeabecb107bf4e1e5",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/b6441501d5bc18a193e26cf8d74d139ad810fc75",
+                "reference": "b6441501d5bc18a193e26cf8d74d139ad810fc75",
                 "shasum": ""
             },
             "require": {
@@ -9134,7 +9139,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/5/stop-using-depr"
             },
-            "time": "2022-11-24T00:09:53+00:00"
+            "time": "2022-11-24T04:40:28+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -9189,16 +9194,16 @@
         },
         {
             "name": "silverstripe/versioned",
-            "version": "1.x-dev",
+            "version": "dev-pulls/1/stop-using-depr",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-versioned.git",
-                "reference": "4baa7b48298c18617c2efc1ea5cf912af62de414"
+                "url": "https://github.com/creative-commoners/silverstripe-versioned.git",
+                "reference": "de9d31db8ef5d31aff5f6669e6d8fe6182094f8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/4baa7b48298c18617c2efc1ea5cf912af62de414",
-                "reference": "4baa7b48298c18617c2efc1ea5cf912af62de414",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-versioned/zipball/de9d31db8ef5d31aff5f6669e6d8fe6182094f8f",
+                "reference": "de9d31db8ef5d31aff5f6669e6d8fe6182094f8f",
                 "shasum": ""
             },
             "require": {
@@ -9212,7 +9217,6 @@
                 "silverstripe/recipe-testing": "^2",
                 "squizlabs/php_codesniffer": "^3"
             },
-            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "autoload": {
                 "psr-4": {
@@ -9223,7 +9227,14 @@
                     "SilverStripe\\Versioned\\Tests\\": "tests/php/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "vendor/bin/phpcs src/ tests/php/"
+                ],
+                "lint-clean": [
+                    "vendor/bin/phpcbf src/ tests/php/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -9244,10 +9255,9 @@
                 "versioned"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-versioned/issues",
-                "source": "https://github.com/silverstripe/silverstripe-versioned/tree/1"
+                "source": "https://github.com/creative-commoners/silverstripe-versioned/tree/pulls/1/stop-using-depr"
             },
-            "time": "2022-11-14T03:56:04+00:00"
+            "time": "2022-11-24T04:40:45+00:00"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -9832,12 +9842,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-advancedworkflow.git",
-                "reference": "3d539bba12015eac1d99e10512ba4dad8e351dec"
+                "reference": "d10f674bb906df737a37b6c6756d72bd13c7d1c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-advancedworkflow/zipball/3d539bba12015eac1d99e10512ba4dad8e351dec",
-                "reference": "3d539bba12015eac1d99e10512ba4dad8e351dec",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-advancedworkflow/zipball/d10f674bb906df737a37b6c6756d72bd13c7d1c7",
+                "reference": "d10f674bb906df737a37b6c6756d72bd13c7d1c7",
                 "shasum": ""
             },
             "require": {
@@ -9894,7 +9904,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-advancedworkflow/tree/pulls/5/stop-using-depr"
             },
-            "time": "2022-11-24T00:11:20+00:00"
+            "time": "2022-11-24T04:41:17+00:00"
         },
         {
             "name": "symbiote/silverstripe-gridfieldextensions",
@@ -15728,16 +15738,34 @@
             "alias_normalized": "2.9999999.9999999.9999999-dev"
         },
         {
+            "package": "cwp/cwp-core",
+            "version": "dev-pulls/2/stop-using-depr",
+            "alias": "2.x-dev",
+            "alias_normalized": "2.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "dnadesign/silverstripe-elemental",
             "version": "dev-pulls/4/stop-using-depr",
             "alias": "4.x-dev",
             "alias_normalized": "4.9999999.9999999.9999999-dev"
         },
         {
+            "package": "silverstripe/blog",
+            "version": "dev-pulls/3/stop-using-depr",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "silverstripe/cms",
             "version": "dev-pulls/4/stop-using-depr",
             "alias": "4.x-dev",
             "alias_normalized": "4.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/comments",
+            "version": "dev-pulls/3/stop-using-depr",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
             "package": "silverstripe/contentreview",
@@ -15750,6 +15778,12 @@
             "version": "dev-pulls/4/stop-using-depr",
             "alias": "4.x-dev",
             "alias_normalized": "4.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/fulltextsearch",
+            "version": "dev-pulls/3/stop-using-depr",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
             "package": "silverstripe/mfa",
@@ -15770,7 +15804,25 @@
             "alias_normalized": "2.9999999.9999999.9999999-dev"
         },
         {
+            "package": "silverstripe/spamprotection",
+            "version": "dev-pulls/3/stop-using-depr",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/spellcheck",
+            "version": "dev-pulls/2/stop-using-depr",
+            "alias": "2.x-dev",
+            "alias_normalized": "2.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "silverstripe/subsites",
+            "version": "dev-pulls/2/stop-using-depr",
+            "alias": "2.x-dev",
+            "alias_normalized": "2.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/tagfield",
             "version": "dev-pulls/2/stop-using-depr",
             "alias": "2.x-dev",
             "alias_normalized": "2.9999999.9999999.9999999-dev"
@@ -15780,6 +15832,12 @@
             "version": "dev-pulls/5/stop-using-depr",
             "alias": "5.x-dev",
             "alias_normalized": "5.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/versioned",
+            "version": "dev-pulls/1/stop-using-depr",
+            "alias": "1.x-dev",
+            "alias_normalized": "1.9999999.9999999.9999999-dev"
         },
         {
             "package": "silverstripe/versionfeed",
@@ -15844,6 +15902,14 @@
         "silverstripe/versionfeed": 20,
         "symbiote/silverstripe-advancedworkflow": 20,
         "symbiote/silverstripe-queuedjobs": 20,
+        "cwp/cwp-core": 20,
+        "silverstripe/blog": 20,
+        "silverstripe/comments": 20,
+        "silverstripe/fulltextsearch": 20,
+        "silverstripe/spamprotection": 20,
+        "silverstripe/spellcheck": 20,
+        "silverstripe/tagfield": 20,
+        "silverstripe/versioned": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
