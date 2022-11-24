@@ -6512,12 +6512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-framework.git",
-                "reference": "c3c794c6abcda82b682c1470c9947a1c529beaf6"
+                "reference": "01f696d26722b23ba087b57dd554ee9f76ba649c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/c3c794c6abcda82b682c1470c9947a1c529beaf6",
-                "reference": "c3c794c6abcda82b682c1470c9947a1c529beaf6",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/01f696d26722b23ba087b57dd554ee9f76ba649c",
+                "reference": "01f696d26722b23ba087b57dd554ee9f76ba649c",
                 "shasum": ""
             },
             "require": {
@@ -6644,7 +6644,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-framework/tree/pulls/4/stop-using-depr"
             },
-            "time": "2022-11-24T04:34:27+00:00"
+            "time": "2022-11-24T21:03:59+00:00"
         },
         {
             "name": "silverstripe/fulltextsearch",
