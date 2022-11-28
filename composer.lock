@@ -1613,12 +1613,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/cwp-core.git",
-                "reference": "5447a33aaa027d0a4f4894f1e86fd5e0e554da0e"
+                "reference": "92f837e33d35d02f5698a048570e1e260ead09cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/5447a33aaa027d0a4f4894f1e86fd5e0e554da0e",
-                "reference": "5447a33aaa027d0a4f4894f1e86fd5e0e554da0e",
+                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/92f837e33d35d02f5698a048570e1e260ead09cd",
+                "reference": "92f837e33d35d02f5698a048570e1e260ead09cd",
                 "shasum": ""
             },
             "require": {
@@ -1657,7 +1657,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-28T04:32:11+00:00"
+            "time": "2022-11-28T20:35:43+00:00"
         },
         {
             "name": "cwp/cwp-pdfexport",
@@ -7510,12 +7510,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-comments.git",
-                "reference": "dca60b4a4da8c385cf3a7587e6d7572941369fe2"
+                "reference": "b771bb624afc8c8deaa368883a6044e331f1a2e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-comments/zipball/dca60b4a4da8c385cf3a7587e6d7572941369fe2",
-                "reference": "dca60b4a4da8c385cf3a7587e6d7572941369fe2",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-comments/zipball/b771bb624afc8c8deaa368883a6044e331f1a2e0",
+                "reference": "b771bb624afc8c8deaa368883a6044e331f1a2e0",
                 "shasum": ""
             },
             "require": {
@@ -7571,7 +7571,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-comments/tree/pulls/3/stop-using-depr"
             },
-            "time": "2022-11-24T23:43:24+00:00"
+            "time": "2022-11-28T20:35:55+00:00"
         },
         {
             "name": "silverstripe/config",
@@ -10899,12 +10899,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-userforms.git",
-                "reference": "ad6d084720f5e9cc87fab2e6a8c467f8181f185f"
+                "reference": "7a6cd1c21133cfaf4e5dd749703d5b07c8d3f2a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/ad6d084720f5e9cc87fab2e6a8c467f8181f185f",
-                "reference": "ad6d084720f5e9cc87fab2e6a8c467f8181f185f",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/7a6cd1c21133cfaf4e5dd749703d5b07c8d3f2a8",
+                "reference": "7a6cd1c21133cfaf4e5dd749703d5b07c8d3f2a8",
                 "shasum": ""
             },
             "require": {
@@ -10984,7 +10984,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/5/stop-using-depr"
             },
-            "time": "2022-11-28T06:20:38+00:00"
+            "time": "2022-11-28T20:36:08+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -12267,16 +12267,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v5.4.15",
+            "version": "v5.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "ea59bb0edfaf9f28d18d8791410ee0355f317669"
+                "reference": "8e9b9c8dfb33af6057c94e1b44846bee700dc5ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/ea59bb0edfaf9f28d18d8791410ee0355f317669",
-                "reference": "ea59bb0edfaf9f28d18d8791410ee0355f317669",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8e9b9c8dfb33af6057c94e1b44846bee700dc5ef",
+                "reference": "8e9b9c8dfb33af6057c94e1b44846bee700dc5ef",
                 "shasum": ""
             },
             "require": {
@@ -12346,7 +12346,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v5.4.15"
+                "source": "https://github.com/symfony/console/tree/v5.4.16"
             },
             "funding": [
                 {
@@ -12362,7 +12362,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-26T21:41:52+00:00"
+            "time": "2022-11-25T14:09:27+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -12432,16 +12432,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.4.44",
+            "version": "v4.4.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "25502a57182ba1e15da0afd64c975cae4d0a1471"
+                "reference": "9065fe97dbd38a897e95ea254eb5ddfe1310f734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/25502a57182ba1e15da0afd64c975cae4d0a1471",
-                "reference": "25502a57182ba1e15da0afd64c975cae4d0a1471",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/9065fe97dbd38a897e95ea254eb5ddfe1310f734",
+                "reference": "9065fe97dbd38a897e95ea254eb5ddfe1310f734",
                 "shasum": ""
             },
             "require": {
@@ -12498,7 +12498,7 @@
             "description": "Allows you to standardize and centralize the way objects are constructed in your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dependency-injection/tree/v4.4.44"
+                "source": "https://github.com/symfony/dependency-injection/tree/v4.4.49"
             },
             "funding": [
                 {
@@ -12514,7 +12514,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-20T09:59:04+00:00"
+            "time": "2022-11-16T16:18:09+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
