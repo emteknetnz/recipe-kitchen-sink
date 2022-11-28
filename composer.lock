@@ -1613,12 +1613,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/cwp-core.git",
-                "reference": "92f837e33d35d02f5698a048570e1e260ead09cd"
+                "reference": "32e7ed58b353fd90d67a2e20027a0c65d4eff577"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/92f837e33d35d02f5698a048570e1e260ead09cd",
-                "reference": "92f837e33d35d02f5698a048570e1e260ead09cd",
+                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/32e7ed58b353fd90d67a2e20027a0c65d4eff577",
+                "reference": "32e7ed58b353fd90d67a2e20027a0c65d4eff577",
                 "shasum": ""
             },
             "require": {
@@ -1657,7 +1657,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/2/stop-using-depr"
             },
-            "time": "2022-11-28T20:35:43+00:00"
+            "time": "2022-11-28T21:19:55+00:00"
         },
         {
             "name": "cwp/cwp-pdfexport",
