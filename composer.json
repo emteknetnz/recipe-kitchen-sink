@@ -21,18 +21,15 @@
         "silverstripe/developer-docs": "4.x-dev",
         "silverstripe/registry": "2.x-dev",
         "silverstripe/totp-authenticator": "4.x-dev",
-        "silverstripe/crontask": "2.x-dev",
         "silverstripe/gridfieldqueuedexport": "2.x-dev",
         "silverstripe/ldap": "1.x-dev",
 
-        "silverstripe/textextraction": "3.x-dev",
         "silverstripe/ckan-registry": "1.x-dev",
         "silverstripe/webauthn-authenticator": "4.x-dev",
         "silverstripe/security-extensions": "4.x-dev",
         "silverstripe/html5": "2.x-dev",
 
         "cwp/agency-extensions": "2.x-dev",
-        "cwp/cwp-pdfexport": "1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.x-dev",
         "tractorcow/silverstripe-fluent": "4.x-dev",
@@ -60,7 +57,18 @@
         "silverstripe/tagfield": "dev-pulls/2/stop-using-depr as 2.x-dev",
         "silverstripe/versioned": "dev-pulls/1/stop-using-depr as 1.x-dev",
         "cwp/starter-theme": "dev-pulls/3/stop-using-depr as 3.x-dev",
-        "cwp/watea-theme": "dev-pulls/3/stop-using-depr as 3.x-dev"
+        "cwp/watea-theme": "dev-pulls/3/stop-using-depr as 3.x-dev",
+
+        "cwp/cwp-pdfexport": "dev-pulls/1/stop-using-depr as 1.x-dev",
+        "silverstripe/admin": "dev-pulls/1/stop-using-depr as 1.x-dev",
+        "silverstripe/behat-extension": "dev-pulls/4/stop-using-depr as 4.x-dev",
+        "silverstripe/crontask": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/externallinks": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/hybridsessions": "dev-pulls/2/stop-using-depr as 2.x-dev",
+        "silverstripe/assets": "dev-pulls/1/stop-using-depr as 1.x-dev",
+        "silverstripe/textextraction": "dev-pulls/3/stop-using-depr as 3.x-dev",
+        "silverstripe/versioned-admin": "dev-pulls/1/stop-using-depr as 1.x-dev"
+
     },
     "require-dev": {
         "silverstripe/frameworktest": "^0.4.6",
@@ -164,6 +172,42 @@
         "x24": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/cwp-watea-theme"
+        },
+        "x25": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp-pdfexport"
+        },
+        "x26": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-admin"
+        },
+        "x27": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-behat-extension"
+        },
+        "x28": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-crontask"
+        },
+        "x29": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-externallinks"
+        },
+        "x30": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-hybridsessions"
+        },
+        "x31": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-assets"
+        },
+        "x32": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-textextraction"
+        },
+        "x33": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned-admin"
         }
     },
     "extra": {
