@@ -36,7 +36,12 @@
         "cwp/cwp": "3.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "4.x-dev",
         "symbiote/silverstripe-multivaluefield": "6.x-dev",
-        "silverstripe/silverstripe-fluent": "7.x-dev"
+        "silverstripe/silverstripe-fluent": "7.x-dev",
+        "silverstripe/asset-admin": "dev-pulls/2/broken-builds as 2.x-dev",
+        "silverstripe/frameworktest": "1.x-dev",
+        "silverstripe/versioned": "dev-pulls/2/broken-builds as 2.x-dev",
+        "dnadesign/silverstripe-elemental": "dev-pulls/5/broken-builds as 5.x-dev",
+        "silverstripe/userforms": "dev-pulls/6/broken-builds as 6.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
@@ -62,5 +67,23 @@
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-asset-admin"
+        },
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-elemental"
+        },
+        "x3": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-userforms"
+        }
+    }
 }
