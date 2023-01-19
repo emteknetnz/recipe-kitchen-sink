@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91b0ad0048e1d88981cc9c7079e3ba3e",
+    "content-hash": "5db3bff9a91a72a0f460c628d6ab30be",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1463,12 +1463,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "8d76888ead0100120d63264e082d398fd8b2453c"
+                "reference": "43dde3acd856557ef4e24b17c91f48eeae132db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/8d76888ead0100120d63264e082d398fd8b2453c",
-                "reference": "8d76888ead0100120d63264e082d398fd8b2453c",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/43dde3acd856557ef4e24b17c91f48eeae132db7",
+                "reference": "43dde3acd856557ef4e24b17c91f48eeae132db7",
                 "shasum": ""
             },
             "require": {
@@ -1528,7 +1528,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/5/broken-builds"
             },
-            "time": "2023-01-19T04:01:54+00:00"
+            "time": "2023-01-19T06:48:07+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
