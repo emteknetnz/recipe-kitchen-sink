@@ -16,21 +16,50 @@ jobs:
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
     with:
       composer_install: true
-      # Use simple_matrix to limit the number of created jobs
-      # phpunit.xml.dist has a large number of testsuites, all of which are tested with
-      # multiple versions of php + databases in both the modules themselves and other recipes
-      # such as recipe-form-building
-      simple_matrix: true
-      # Also include jobs with the lowest version of PHP with --prefer-lowest and
-      # the highest version of PHP to ensure everything installs
-      # This should be php 7.3 & 8.0 in 4.10, and php 7.4 & 8.1 in 4.11+
-      # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
+      dynamic_matrix: false
       extra_jobs: |
-        - php: 8.1
+        - php: 8.2
           phpunit: true
           phpunit_suite: recipe-cms
-      # TODO: renable prefer-lowest build once CMS 5 beta is out
-      # - php: 8.1
-      #   composer_args: --prefer-lowest
-      #   phpunit: true
-      #   phpunit_suite: recipe-cms
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: framework-orm
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: framework-core
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-cms
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-ccl
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-solr-search
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-authoring-tools
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-blog
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-collaboration
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-content-blocks
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-form-building
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-reporting-tools
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: recipe-services
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: optional-authenticators
+        - php: 8.2
+          phpunit: true
+          phpunit_suite: mfa

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef850e3bc35cf355551254b80fb5caa3",
+    "content-hash": "8b648e033413abd5d3b1baeb8f14462a",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1202,16 +1202,16 @@
         },
         {
             "name": "cwp/cwp-core",
-            "version": "dev-pulls/3/broken-builds",
+            "version": "dev-pulls/3/php82",
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/cwp-core.git",
-                "reference": "3a4fec60addd41289bf224371ef0ff55c29ae9e2"
+                "reference": "c2547b1b1b762b77348a31766f5c583b16089e45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/3a4fec60addd41289bf224371ef0ff55c29ae9e2",
-                "reference": "3a4fec60addd41289bf224371ef0ff55c29ae9e2",
+                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/c2547b1b1b762b77348a31766f5c583b16089e45",
+                "reference": "c2547b1b1b762b77348a31766f5c583b16089e45",
                 "shasum": ""
             },
             "require": {
@@ -1248,9 +1248,9 @@
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/3/broken-builds"
+                "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/3/php82"
             },
-            "time": "2023-01-19T09:32:38+00:00"
+            "time": "2023-01-19T21:50:34+00:00"
         },
         {
             "name": "cwp/cwp-search",
@@ -3200,16 +3200,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.12.1",
+            "version": "3.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "b934123c1f11ada6363d057d691e3065fa6d6d49"
+                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/b934123c1f11ada6363d057d691e3065fa6d6d49",
-                "reference": "b934123c1f11ada6363d057d691e3065fa6d6d49",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f6377c709d2275ed6feaf63e44be7a7162b0e77f",
+                "reference": "f6377c709d2275ed6feaf63e44be7a7162b0e77f",
                 "shasum": ""
             },
             "require": {
@@ -3271,7 +3271,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.12.1"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.12.2"
             },
             "funding": [
                 {
@@ -3287,7 +3287,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-06T16:34:48+00:00"
+            "time": "2023-01-19T12:02:19+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -6369,16 +6369,16 @@
         },
         {
             "name": "silverstripe/documentconverter",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/php82",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-documentconverter.git",
-                "reference": "5bbaed1a4b1ad998165efbb9d8aab25aad13558b"
+                "url": "https://github.com/creative-commoners/silverstripe-documentconverter.git",
+                "reference": "34d3c293b059997c34884a411a6db4fcb3e61b1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-documentconverter/zipball/5bbaed1a4b1ad998165efbb9d8aab25aad13558b",
-                "reference": "5bbaed1a4b1ad998165efbb9d8aab25aad13558b",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-documentconverter/zipball/34d3c293b059997c34884a411a6db4fcb3e61b1d",
+                "reference": "34d3c293b059997c34884a411a6db4fcb3e61b1d",
                 "shasum": ""
             },
             "require": {
@@ -6405,7 +6405,6 @@
                     "SilverStripe\\DocumentConverter\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6415,10 +6414,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-documentconverter/issues",
-                "source": "https://github.com/silverstripe/silverstripe-documentconverter/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-documentconverter/tree/pulls/3/php82"
             },
-            "time": "2022-12-18T22:45:20+00:00"
+            "time": "2023-01-19T21:44:32+00:00"
         },
         {
             "name": "silverstripe/elemental-bannerblock",
@@ -7165,16 +7163,16 @@
         },
         {
             "name": "silverstripe/iframe",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/php82",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-iframe.git",
-                "reference": "031d47ce207b8b5e886ad446cb3c31e6ae7e0ef0"
+                "url": "https://github.com/creative-commoners/silverstripe-iframe.git",
+                "reference": "145e2009b46316399daab69a024b774160d2ff0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-iframe/zipball/031d47ce207b8b5e886ad446cb3c31e6ae7e0ef0",
-                "reference": "031d47ce207b8b5e886ad446cb3c31e6ae7e0ef0",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-iframe/zipball/145e2009b46316399daab69a024b774160d2ff0f",
+                "reference": "145e2009b46316399daab69a024b774160d2ff0f",
                 "shasum": ""
             },
             "require": {
@@ -7197,7 +7195,6 @@
                     "SilverStripe\\IFrame\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7212,10 +7209,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-iframe/issues",
-                "source": "https://github.com/silverstripe/silverstripe-iframe/tree/3"
+                "source": "https://github.com/creative-commoners/silverstripe-iframe/tree/pulls/3/php82"
             },
-            "time": "2023-01-10T02:27:51+00:00"
+            "time": "2023-01-19T21:48:04+00:00"
         },
         {
             "name": "silverstripe/installer",
@@ -15551,7 +15547,7 @@
     "aliases": [
         {
             "package": "cwp/cwp-core",
-            "version": "dev-pulls/3/broken-builds",
+            "version": "dev-pulls/3/php82",
             "alias": "3.x-dev",
             "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
@@ -15578,6 +15574,18 @@
             "version": "dev-pulls/4/param-order",
             "alias": "4.x-dev",
             "alias_normalized": "4.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/documentconverter",
+            "version": "dev-pulls/3/php82",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/iframe",
+            "version": "dev-pulls/3/php82",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
             "package": "silverstripe/lumberjack",
@@ -15646,6 +15654,8 @@
         "silverstripe/comments": 20,
         "silverstripe/lumberjack": 20,
         "cwp/cwp-core": 20,
+        "silverstripe/iframe": 20,
+        "silverstripe/documentconverter": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
