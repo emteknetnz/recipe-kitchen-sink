@@ -44,7 +44,8 @@
         "silverstripe/userforms": "dev-pulls/6/broken-builds as 6.x-dev",
         "silverstripe/cms": "dev-pulls/5/broken-builds as 5.x-dev",
         "silverstripe/comments": "dev-pulls/4/param-order as 4.x-dev",
-        "silverstripe/lumberjack": "dev-pulls/3/param-order as 3.x-dev"
+        "silverstripe/lumberjack": "dev-pulls/3/param-order as 3.x-dev",
+        "cwp/cwp-core": "dev-pulls/3/broken-builds as 3.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
@@ -128,6 +129,10 @@
         "x7": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-subsites"
+        },
+        "x8": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp-core"
         }
     }
 }

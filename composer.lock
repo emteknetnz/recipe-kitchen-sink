@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e6b5dca3436389f31231e0da3de126e",
+    "content-hash": "ef850e3bc35cf355551254b80fb5caa3",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1202,16 +1202,16 @@
         },
         {
             "name": "cwp/cwp-core",
-            "version": "3.x-dev",
+            "version": "dev-pulls/3/broken-builds",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/cwp-core.git",
-                "reference": "0e416b001ac8d047c2242ef7589b6dbb6d550568"
+                "url": "https://github.com/creative-commoners/cwp-core.git",
+                "reference": "3a4fec60addd41289bf224371ef0ff55c29ae9e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/cwp-core/zipball/0e416b001ac8d047c2242ef7589b6dbb6d550568",
-                "reference": "0e416b001ac8d047c2242ef7589b6dbb6d550568",
+                "url": "https://api.github.com/repos/creative-commoners/cwp-core/zipball/3a4fec60addd41289bf224371ef0ff55c29ae9e2",
+                "reference": "3a4fec60addd41289bf224371ef0ff55c29ae9e2",
                 "shasum": ""
             },
             "require": {
@@ -1239,7 +1239,6 @@
                     "CWP\\Core\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1249,10 +1248,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/cwp-core/issues",
-                "source": "https://github.com/silverstripe/cwp-core/tree/3"
+                "source": "https://github.com/creative-commoners/cwp-core/tree/pulls/3/broken-builds"
             },
-            "time": "2023-01-17T23:29:45+00:00"
+            "time": "2023-01-19T09:32:38+00:00"
         },
         {
             "name": "cwp/cwp-search",
@@ -15552,6 +15550,12 @@
     ],
     "aliases": [
         {
+            "package": "cwp/cwp-core",
+            "version": "dev-pulls/3/broken-builds",
+            "alias": "3.x-dev",
+            "alias_normalized": "3.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "dnadesign/silverstripe-elemental",
             "version": "dev-pulls/5/broken-builds",
             "alias": "5.x-dev",
@@ -15641,6 +15645,7 @@
         "silverstripe/cms": 20,
         "silverstripe/comments": 20,
         "silverstripe/lumberjack": 20,
+        "cwp/cwp-core": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
