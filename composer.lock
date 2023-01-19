@@ -10198,16 +10198,16 @@
         },
         {
             "name": "symbiote/silverstripe-gridfieldextensions",
-            "version": "4.0.0-alpha1",
+            "version": "4.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symbiote/silverstripe-gridfieldextensions.git",
-                "reference": "375fc5899dfeaea3d47027cefc77cad9b1680be0"
+                "reference": "fd24736b52f7ac18f08d813f042da3e18aa9c278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symbiote/silverstripe-gridfieldextensions/zipball/375fc5899dfeaea3d47027cefc77cad9b1680be0",
-                "reference": "375fc5899dfeaea3d47027cefc77cad9b1680be0",
+                "url": "https://api.github.com/repos/symbiote/silverstripe-gridfieldextensions/zipball/fd24736b52f7ac18f08d813f042da3e18aa9c278",
+                "reference": "fd24736b52f7ac18f08d813f042da3e18aa9c278",
                 "shasum": ""
             },
             "require": {
@@ -10266,9 +10266,9 @@
             ],
             "support": {
                 "issues": "http://github.com/symbiote/silverstripe-gridfieldextensions/issues",
-                "source": "https://github.com/symbiote/silverstripe-gridfieldextensions/tree/4.0.0-alpha1"
+                "source": "https://github.com/symbiote/silverstripe-gridfieldextensions/tree/4.0.0-alpha2"
             },
-            "time": "2022-08-17T23:04:05+00:00"
+            "time": "2023-01-18T01:00:38+00:00"
         },
         {
             "name": "symbiote/silverstripe-multivaluefield",
