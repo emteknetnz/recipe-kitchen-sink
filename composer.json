@@ -29,7 +29,7 @@
         "silverstripe/ckan-registry": "2.x-dev",
         "silverstripe/webauthn-authenticator": "5.x-dev",
         "silverstripe/security-extensions": "5.x-dev",
-        "silverstripe/subsites": "3.x-dev",
+        "silverstripe/subsites": "dev-pulls/3/param-order as 3.x-dev",
         "cwp/starter-theme": "4.x-dev",
         "cwp/agency-extensions": "3.x-dev",
         "cwp/watea-theme": "4.x-dev",
@@ -42,7 +42,9 @@
         "silverstripe/versioned": "dev-pulls/2/broken-builds as 2.x-dev",
         "dnadesign/silverstripe-elemental": "dev-pulls/5/broken-builds as 5.x-dev",
         "silverstripe/userforms": "dev-pulls/6/broken-builds as 6.x-dev",
-        "silverstripe/cms": "dev-pulls/5/broken-builds as 5.x-dev"
+        "silverstripe/cms": "dev-pulls/5/broken-builds as 5.x-dev",
+        "silverstripe/comments": "dev-pulls/4/param-order as 4.x-dev",
+        "silverstripe/lumberjack": "dev-pulls/3/param-order as 3.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
@@ -114,6 +116,18 @@
         "x4": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-cms"
+        },
+        "x5": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-comments"
+        },
+        "x6": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-lumberjack"
+        },
+        "x7": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-subsites"
         }
     }
 }
