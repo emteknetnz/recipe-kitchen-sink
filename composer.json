@@ -5,7 +5,7 @@
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "silverstripe/recipe-plugin": "2.x-dev",
         "silverstripe/installer": "5.x-dev",
         "silverstripe/recipe-authoring-tools": "2.x-dev",
@@ -23,7 +23,7 @@
         "silverstripe/mfa": "5.x-dev",
         "silverstripe/crontask": "3.x-dev",
         "silverstripe/gridfieldqueuedexport": "3.x-dev",
-        "silverstripe/ldap": "2.x-dev",
+        "silverstripe/ldap": "dev-pulls/2/php82 as 2.x-dev",
         "silverstripe/textextraction": "4.x-dev",
         "silverstripe/realme": "5.x-dev",
         "silverstripe/ckan-registry": "2.x-dev",
@@ -37,17 +37,17 @@
         "dnadesign/silverstripe-elemental-userforms": "4.x-dev",
         "symbiote/silverstripe-multivaluefield": "6.x-dev",
         "silverstripe/silverstripe-fluent": "7.x-dev",
-        "silverstripe/asset-admin": "dev-pulls/2/broken-builds as 2.x-dev",
         "silverstripe/frameworktest": "1.x-dev",
-        "silverstripe/versioned": "dev-pulls/2/broken-builds as 2.x-dev",
-        "dnadesign/silverstripe-elemental": "dev-pulls/5/broken-builds as 5.x-dev",
-        "silverstripe/userforms": "dev-pulls/6/broken-builds as 6.x-dev",
+        "silverstripe/userforms": "dev-pulls/6/php82 as 6.x-dev",
         "silverstripe/cms": "dev-pulls/5/broken-builds as 5.x-dev",
         "silverstripe/comments": "dev-pulls/4/param-order as 4.x-dev",
         "silverstripe/lumberjack": "dev-pulls/3/param-order as 3.x-dev",
         "cwp/cwp-core": "dev-pulls/3/php82 as 3.x-dev",
         "silverstripe/iframe": "dev-pulls/3/php82 as 3.x-dev",
-        "silverstripe/documentconverter": "dev-pulls/3/php82 as 3.x-dev"
+        "silverstripe/documentconverter": "dev-pulls/3/php82 as 3.x-dev",
+        "silverstripe/solr-php-client": "dev-pulls/master/php82 as v1.0.2",
+        "symbiote/silverstripe-queuedjobs": "dev-pulls/5/admin-email as 5.x-dev",
+        "silverstripe/fulltextsearch": "dev-pulls/4/php82 as 4.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
@@ -95,23 +95,14 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platform": {
+            "php": "8.2.0"
         }
     },
     "prefer-stable": true,
     "minimum-stability": "dev",
     "repositories": {
-        "x0": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-asset-admin"
-        },
-        "x1": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-versioned"
-        },
-        "x2": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-elemental"
-        },
         "x3": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-userforms"
@@ -143,6 +134,26 @@
         "x10": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-documentconverter"
+        },
+        "x11": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-ldap"
+        },
+        "yx12": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/solr-php-client.git"
+        },
+        "x13": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-userforms"
+        },
+        "x14": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-queuedjobs"
+        },
+        "x15": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-fulltextsearch"
         }
     }
 }

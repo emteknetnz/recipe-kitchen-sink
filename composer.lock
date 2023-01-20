@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b648e033413abd5d3b1baeb8f14462a",
+    "content-hash": "ee32d88cdfbe80888544a39059615449",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1457,16 +1457,16 @@
         },
         {
             "name": "dnadesign/silverstripe-elemental",
-            "version": "dev-pulls/5/broken-builds",
+            "version": "5.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "43dde3acd856557ef4e24b17c91f48eeae132db7"
+                "url": "https://github.com/silverstripe/silverstripe-elemental.git",
+                "reference": "c2ddaa7f4551b30ab6de02b0c8d0ebe658fb983d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/43dde3acd856557ef4e24b17c91f48eeae132db7",
-                "reference": "43dde3acd856557ef4e24b17c91f48eeae132db7",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-elemental/zipball/c2ddaa7f4551b30ab6de02b0c8d0ebe658fb983d",
+                "reference": "c2ddaa7f4551b30ab6de02b0c8d0ebe658fb983d",
                 "shasum": ""
             },
             "require": {
@@ -1507,6 +1507,7 @@
                     "DNADesign\\Elemental\\Tests\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1518,15 +1519,16 @@
             ],
             "description": "Elemental pagetype and collection of Elements",
             "keywords": [
-                "content blocks",
+                "Content Blocks",
                 "element",
                 "elemental",
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/5/broken-builds"
+                "issues": "https://github.com/silverstripe/silverstripe-elemental/issues",
+                "source": "https://github.com/silverstripe/silverstripe-elemental/tree/5"
             },
-            "time": "2023-01-19T06:48:07+00:00"
+            "time": "2023-01-20T00:56:36+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -5515,16 +5517,16 @@
         },
         {
             "name": "silverstripe/asset-admin",
-            "version": "dev-pulls/2/broken-builds",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/creative-commoners/silverstripe-asset-admin.git",
-                "reference": "62f71a3a94915e4f450f8103abbba1eae15b0d3c"
+                "url": "https://github.com/silverstripe/silverstripe-asset-admin.git",
+                "reference": "e8c7c31059f9724659e5245a5f50676c2ab6eebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/62f71a3a94915e4f450f8103abbba1eae15b0d3c",
-                "reference": "62f71a3a94915e4f450f8103abbba1eae15b0d3c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-asset-admin/zipball/e8c7c31059f9724659e5245a5f50676c2ab6eebb",
+                "reference": "e8c7c31059f9724659e5245a5f50676c2ab6eebb",
                 "shasum": ""
             },
             "require": {
@@ -5557,22 +5559,16 @@
                     "SilverStripe\\AssetAdmin\\Tests\\Behat\\Context\\": "tests/behat/src/"
                 }
             },
-            "scripts": {
-                "lint": [
-                    "phpcs -s code/ tests/"
-                ],
-                "lint-clean": [
-                    "phpcbf code/ tests/"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "description": "Asset management for the SilverStripe CMS",
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-asset-admin/tree/pulls/2/broken-builds"
+                "issues": "https://github.com/silverstripe/silverstripe-asset-admin/issues",
+                "source": "https://github.com/silverstripe/silverstripe-asset-admin/tree/2"
             },
-            "time": "2023-01-19T03:32:45+00:00"
+            "time": "2023-01-20T00:23:00+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -6932,16 +6928,16 @@
         },
         {
             "name": "silverstripe/fulltextsearch",
-            "version": "4.x-dev",
+            "version": "dev-pulls/4/php82",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-fulltextsearch.git",
-                "reference": "fc415c33dd5182b769c3f7a77f90a4cf472713df"
+                "url": "https://github.com/creative-commoners/silverstripe-fulltextsearch.git",
+                "reference": "723ff530dd6e51060a998faf93094472781bd7a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-fulltextsearch/zipball/fc415c33dd5182b769c3f7a77f90a4cf472713df",
-                "reference": "fc415c33dd5182b769c3f7a77f90a4cf472713df",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-fulltextsearch/zipball/723ff530dd6e51060a998faf93094472781bd7a0",
+                "reference": "723ff530dd6e51060a998faf93094472781bd7a0",
                 "shasum": ""
             },
             "require": {
@@ -6950,7 +6946,7 @@
                 "php": "^8.1",
                 "silverstripe/framework": "^5",
                 "silverstripe/silverstripe-proxy-db": "^2",
-                "silverstripe/solr-php-client": "^1.0",
+                "silverstripe/solr-php-client": "^1",
                 "symfony/process": "^6.2"
             },
             "require-dev": {
@@ -6973,7 +6969,14 @@
                     "SilverStripe\\FullTextSearch\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "lint": [
+                    "phpcs -s src/ tests/"
+                ],
+                "lint-clean": [
+                    "phpcbf src/ tests/"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6996,10 +6999,9 @@
                 "sphinx"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-fulltextsearch/issues",
-                "source": "https://github.com/silverstripe/silverstripe-fulltextsearch/tree/4"
+                "source": "https://github.com/creative-commoners/silverstripe-fulltextsearch/tree/pulls/4/php82"
             },
-            "time": "2023-01-16T21:21:10+00:00"
+            "time": "2023-01-19T23:50:48+00:00"
         },
         {
             "name": "silverstripe/graphql",
@@ -7262,16 +7264,16 @@
         },
         {
             "name": "silverstripe/ldap",
-            "version": "2.x-dev",
+            "version": "dev-pulls/2/php82",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-ldap.git",
-                "reference": "972af65dab8b2713659f472b94094caff65754fe"
+                "url": "https://github.com/creative-commoners/silverstripe-ldap.git",
+                "reference": "ada2ba52140c5d714ce9316b64e1f640e380cb35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-ldap/zipball/972af65dab8b2713659f472b94094caff65754fe",
-                "reference": "972af65dab8b2713659f472b94094caff65754fe",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-ldap/zipball/ada2ba52140c5d714ce9316b64e1f640e380cb35",
+                "reference": "ada2ba52140c5d714ce9316b64e1f640e380cb35",
                 "shasum": ""
             },
             "require": {
@@ -7294,7 +7296,6 @@
                     "SilverStripe\\LDAP\\Tests\\": "tests/php/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7317,10 +7318,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-ldap/issues",
-                "source": "https://github.com/silverstripe/silverstripe-ldap/tree/2"
+                "source": "https://github.com/creative-commoners/silverstripe-ldap/tree/pulls/2/php82"
             },
-            "time": "2023-01-16T21:04:15+00:00"
+            "time": "2023-01-19T22:55:36+00:00"
         },
         {
             "name": "silverstripe/login-forms",
@@ -8912,20 +8912,20 @@
         },
         {
             "name": "silverstripe/solr-php-client",
-            "version": "v1.0.2",
+            "version": "dev-pulls/master/php82",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/solr-php-client.git",
-                "reference": "d6fdeed4dd5b145b54055ccd904267042c88683a"
+                "url": "https://github.com/creative-commoners/solr-php-client.git",
+                "reference": "8749a0c322384eee107580c30d686df41bd52529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/solr-php-client/zipball/d6fdeed4dd5b145b54055ccd904267042c88683a",
-                "reference": "d6fdeed4dd5b145b54055ccd904267042c88683a",
+                "url": "https://api.github.com/repos/creative-commoners/solr-php-client/zipball/8749a0c322384eee107580c30d686df41bd52529",
+                "reference": "8749a0c322384eee107580c30d686df41bd52529",
                 "shasum": ""
             },
             "replace": {
-                "ptcinc/solr-php-client": "^1.0"
+                "ptcinc/solr-php-client": "^1"
             },
             "require-dev": {
                 "phpunit/phpunit": "9.5"
@@ -8936,7 +8936,6 @@
                     "Apache_Solr_": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8953,9 +8952,9 @@
                 "solr"
             ],
             "support": {
-                "source": "https://github.com/silverstripe/solr-php-client/tree/v1.0.2"
+                "source": "https://github.com/creative-commoners/solr-php-client/tree/pulls/master/php82"
             },
-            "time": "2022-05-10T03:19:59+00:00"
+            "time": "2023-01-20T00:19:34+00:00"
         },
         {
             "name": "silverstripe/spamprotection",
@@ -9320,16 +9319,16 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "dev-pulls/6/broken-builds",
+            "version": "dev-pulls/6/php82",
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-userforms.git",
-                "reference": "14e1e5e1fa43a0434c7692612eb3e72081f96603"
+                "reference": "5b9c8d2a4ff98cff05f053d4b7592e92cc8f0a02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/14e1e5e1fa43a0434c7692612eb3e72081f96603",
-                "reference": "14e1e5e1fa43a0434c7692612eb3e72081f96603",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/5b9c8d2a4ff98cff05f053d4b7592e92cc8f0a02",
+                "reference": "5b9c8d2a4ff98cff05f053d4b7592e92cc8f0a02",
                 "shasum": ""
             },
             "require": {
@@ -9407,9 +9406,9 @@
                 "userforms"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/6/broken-builds"
+                "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/6/php82"
             },
-            "time": "2023-01-19T08:16:49+00:00"
+            "time": "2023-01-19T23:16:35+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -9464,16 +9463,16 @@
         },
         {
             "name": "silverstripe/versioned",
-            "version": "dev-pulls/2/broken-builds",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/creative-commoners/silverstripe-versioned.git",
-                "reference": "bbb1fd97ba8c8f1a889b53aa68495e4958e61c1e"
+                "url": "https://github.com/silverstripe/silverstripe-versioned.git",
+                "reference": "f92a4ab942f997227a2b74610dba92fcaefe26c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-versioned/zipball/bbb1fd97ba8c8f1a889b53aa68495e4958e61c1e",
-                "reference": "bbb1fd97ba8c8f1a889b53aa68495e4958e61c1e",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-versioned/zipball/f92a4ab942f997227a2b74610dba92fcaefe26c2",
+                "reference": "f92a4ab942f997227a2b74610dba92fcaefe26c2",
                 "shasum": ""
             },
             "require": {
@@ -9497,14 +9496,7 @@
                     "SilverStripe\\Versioned\\Tests\\": "tests/php/"
                 }
             },
-            "scripts": {
-                "lint": [
-                    "vendor/bin/phpcs src/ tests/php/"
-                ],
-                "lint-clean": [
-                    "vendor/bin/phpcbf src/ tests/php/"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -9525,9 +9517,10 @@
                 "versioned"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-versioned/tree/pulls/2/broken-builds"
+                "issues": "https://github.com/silverstripe/silverstripe-versioned/issues",
+                "source": "https://github.com/silverstripe/silverstripe-versioned/tree/2"
             },
-            "time": "2023-01-19T03:41:58+00:00"
+            "time": "2023-01-20T00:23:55+00:00"
         },
         {
             "name": "silverstripe/versioned-admin",
@@ -10328,16 +10321,16 @@
         },
         {
             "name": "symbiote/silverstripe-queuedjobs",
-            "version": "5.x-dev",
+            "version": "dev-pulls/5/admin-email",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symbiote/silverstripe-queuedjobs.git",
-                "reference": "6041b10eb775e0fed32c75bd8d780c77df6daed9"
+                "url": "https://github.com/creative-commoners/silverstripe-queuedjobs.git",
+                "reference": "63ede487d6f1bc7ddf8189b658c70e815bce6e2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symbiote/silverstripe-queuedjobs/zipball/6041b10eb775e0fed32c75bd8d780c77df6daed9",
-                "reference": "6041b10eb775e0fed32c75bd8d780c77df6daed9",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-queuedjobs/zipball/63ede487d6f1bc7ddf8189b658c70e815bce6e2b",
+                "reference": "63ede487d6f1bc7ddf8189b658c70e815bce6e2b",
                 "shasum": ""
             },
             "require": {
@@ -10365,7 +10358,6 @@
                     "Symbiote\\QueuedJobs\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -10385,10 +10377,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/symbiote/silverstripe-queuedjobs/issues",
-                "source": "https://github.com/symbiote/silverstripe-queuedjobs/tree/5"
+                "source": "https://github.com/creative-commoners/silverstripe-queuedjobs/tree/pulls/5/admin-email"
             },
-            "time": "2022-12-14T02:15:41+00:00"
+            "time": "2023-01-19T23:38:50+00:00"
         },
         {
             "name": "symfony/cache",
@@ -15552,18 +15543,6 @@
             "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
-            "package": "dnadesign/silverstripe-elemental",
-            "version": "dev-pulls/5/broken-builds",
-            "alias": "5.x-dev",
-            "alias_normalized": "5.9999999.9999999.9999999-dev"
-        },
-        {
-            "package": "silverstripe/asset-admin",
-            "version": "dev-pulls/2/broken-builds",
-            "alias": "2.x-dev",
-            "alias_normalized": "2.9999999.9999999.9999999-dev"
-        },
-        {
             "package": "silverstripe/cms",
             "version": "dev-pulls/5/broken-builds",
             "alias": "5.x-dev",
@@ -15582,16 +15561,34 @@
             "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
+            "package": "silverstripe/fulltextsearch",
+            "version": "dev-pulls/4/php82",
+            "alias": "4.x-dev",
+            "alias_normalized": "4.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "silverstripe/iframe",
             "version": "dev-pulls/3/php82",
             "alias": "3.x-dev",
             "alias_normalized": "3.9999999.9999999.9999999-dev"
         },
         {
+            "package": "silverstripe/ldap",
+            "version": "dev-pulls/2/php82",
+            "alias": "2.x-dev",
+            "alias_normalized": "2.9999999.9999999.9999999-dev"
+        },
+        {
             "package": "silverstripe/lumberjack",
             "version": "dev-pulls/3/param-order",
             "alias": "3.x-dev",
             "alias_normalized": "3.9999999.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/solr-php-client",
+            "version": "dev-pulls/master/php82",
+            "alias": "v1.0.2",
+            "alias_normalized": "1.0.2.0"
         },
         {
             "package": "silverstripe/subsites",
@@ -15601,15 +15598,15 @@
         },
         {
             "package": "silverstripe/userforms",
-            "version": "dev-pulls/6/broken-builds",
+            "version": "dev-pulls/6/php82",
             "alias": "6.x-dev",
             "alias_normalized": "6.9999999.9999999.9999999-dev"
         },
         {
-            "package": "silverstripe/versioned",
-            "version": "dev-pulls/2/broken-builds",
-            "alias": "2.x-dev",
-            "alias_normalized": "2.9999999.9999999.9999999-dev"
+            "package": "symbiote/silverstripe-queuedjobs",
+            "version": "dev-pulls/5/admin-email",
+            "alias": "5.x-dev",
+            "alias_normalized": "5.9999999.9999999.9999999-dev"
         }
     ],
     "minimum-stability": "dev",
@@ -15645,10 +15642,7 @@
         "dnadesign/silverstripe-elemental-userforms": 20,
         "symbiote/silverstripe-multivaluefield": 20,
         "silverstripe/silverstripe-fluent": 20,
-        "silverstripe/asset-admin": 20,
         "silverstripe/frameworktest": 20,
-        "silverstripe/versioned": 20,
-        "dnadesign/silverstripe-elemental": 20,
         "silverstripe/userforms": 20,
         "silverstripe/cms": 20,
         "silverstripe/comments": 20,
@@ -15656,13 +15650,19 @@
         "cwp/cwp-core": 20,
         "silverstripe/iframe": 20,
         "silverstripe/documentconverter": 20,
+        "silverstripe/solr-php-client": 20,
+        "symbiote/silverstripe-queuedjobs": 20,
+        "silverstripe/fulltextsearch": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1"
+        "php": "^8.2"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "8.2.0"
+    },
     "plugin-api-version": "2.3.0"
 }
