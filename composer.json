@@ -40,7 +40,11 @@
         "symbiote/silverstripe-gridfieldextensions": "4.0.x-dev",
         "colymba/gridfield-bulk-editing-tools": "4.0.x-dev",
         "tractorcow/silverstripe-fluent": "7.0.x-dev",
-        "silverstripe/dynamodb": "5.0.x-dev"
+        "silverstripe/dynamodb": "5.0.x-dev",
+        "silverstripe/framework": "dev-pulls/5.0/get-and-set as 5.0.x-dev",
+        "silverstripe/frameworktest": "1.x-dev",
+        "silverstripe/recipe-testing": "^3",
+        "mikey179/vfsstream": "^1.6.10"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^1",
@@ -63,8 +67,17 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platfrom": {
+            "php": "8.1"
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework"
+        }
+    }
 }
