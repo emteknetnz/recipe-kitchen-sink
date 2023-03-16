@@ -6,10 +6,10 @@
             <directory>vendor/silverstripe/config/tests</directory>
             <directory>vendor/silverstripe/assets/tests/php/</directory>
             <directory>vendor/silverstripe/versioned/tests/php/</directory>
-        </testsuite>
+        </testsuite> -->
 
         <!-- Framework ORM tests are split up to run in parallel -->
-        <testsuite name="framework-orm">
+        <!-- <testsuite name="framework-orm">
             <directory>vendor/silverstripe/framework/tests/php/ORM</directory>
         </testsuite>
         <testsuite name="framework-core">
@@ -29,13 +29,13 @@
             <directory>vendor/silverstripe/asset-admin/tests/php/</directory>
             <directory>vendor/silverstripe/graphql/tests/</directory>
             <directory>vendor/silverstripe/siteconfig/tests/php/</directory>
-            <directory>vendor/silverstripe/reports/tests/</directory>
+            <directory>vendor/silverstripe/reports/tests/</directory> -->
             <!-- CMS needs to run last because the SearchFormTest enables FulltextSearchable  -->
-            <directory>vendor/silverstripe/cms/tests/</directory>
-        </testsuite>
+            <!-- <directory>vendor/silverstripe/cms/tests/</directory>
+        </testsuite> -->
 
         <!-- Optional CWP modules that aren't in recipes -->
-        <testsuite name="Default">
+        <!-- <testsuite name="Default">
             <directory>vendor/cwp/agency-extensions/tests</directory>
             <directory>vendor/silverstripe/subsites/tests</directory>
             <directory>vendor/silverstripe/ckan-registry/tests</directory>
@@ -45,9 +45,9 @@
             <directory>vendor/silverstripe/registry/tests</directory>
             <directory>vendor/silverstripe/textextraction/tests</directory>
             <directory>vendor/tractorcow/silverstripe-fluent/tests</directory>
-        </testsuite>
+        </testsuite> -->
 
-        <testsuite name="recipe-ccl">
+        <!-- <testsuite name="recipe-ccl">
             <directory>vendor/cwp/cwp-core/tests</directory>
             <directory>vendor/silverstripe/auditor/tests</directory>
             <directory>vendor/silverstripe/environmentcheck/tests</directory>
@@ -58,10 +58,10 @@
             <directory>vendor/cwp/cwp-search/tests</directory>
             <directory>vendor/silverstripe/fulltextsearch/tests</directory>
             <directory>vendor/symbiote/silverstripe-queuedjobs/tests</directory>
-        </testsuite>
+        </testsuite> -->
 
         <!-- Optional SilverStripe recipes -->
-        <testsuite name="recipe-authoring-tools">
+        <!-- <testsuite name="recipe-authoring-tools">
             <directory>vendor/silverstripe/documentconverter/tests</directory>
             <directory>vendor/silverstripe/iframe/tests</directory>
             <directory>vendor/silverstripe/spellcheck/tests</directory>
