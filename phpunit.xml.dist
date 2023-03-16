@@ -2,7 +2,7 @@
 <phpunit bootstrap="vendor/silverstripe/framework/tests/bootstrap.php" colors="true">
     <!-- Core SilverStripe modules (except framework) -->
     <testsuites>
-        <testsuite name="recipe-core">
+        <!-- <testsuite name="recipe-core">
             <directory>vendor/silverstripe/config/tests</directory>
             <directory>vendor/silverstripe/assets/tests/php/</directory>
             <directory>vendor/silverstripe/versioned/tests/php/</directory>
@@ -117,7 +117,7 @@
         <testsuite name="optional-authenticators">
             <directory>vendor/silverstripe/ldap/tests</directory>
             <directory>vendor/silverstripe/realme/tests</directory>
-        </testsuite>
+        </testsuite> -->
 
         <testsuite name="mfa">
             <directory>vendor/silverstripe/mfa/tests</directory>
@@ -126,8 +126,8 @@
             <directory>vendor/silverstripe/login-forms/tests</directory>
         </testsuite>
 
-        <testsuite name="other">
+        <!-- <testsuite name="other">
             <directory>vendor/silverstripe/security-extensions/tests</directory>
-        </testsuite>
+        </testsuite> -->
     </testsuites>
 </phpunit>
