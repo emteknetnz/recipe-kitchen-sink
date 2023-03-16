@@ -11092,12 +11092,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/emteknetnz/silverstripe-totp-authenticator.git",
-                "reference": "522da63c003a30ee71e342307345f1b5508928f4"
+                "reference": "66dc9f1f2ea3bd9b5cb3e172de712a0527a0b283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/emteknetnz/silverstripe-totp-authenticator/zipball/522da63c003a30ee71e342307345f1b5508928f4",
-                "reference": "522da63c003a30ee71e342307345f1b5508928f4",
+                "url": "https://api.github.com/repos/emteknetnz/silverstripe-totp-authenticator/zipball/66dc9f1f2ea3bd9b5cb3e172de712a0527a0b283",
+                "reference": "66dc9f1f2ea3bd9b5cb3e172de712a0527a0b283",
                 "shasum": ""
             },
             "require": {
@@ -11143,7 +11143,7 @@
             "support": {
                 "source": "https://github.com/emteknetnz/silverstripe-totp-authenticator/tree/pulls/4.6/test-timeout"
             },
-            "time": "2023-03-16T03:39:49+00:00"
+            "time": "2023-03-16T04:50:44+00:00"
         },
         {
             "name": "silverstripe/userforms",
