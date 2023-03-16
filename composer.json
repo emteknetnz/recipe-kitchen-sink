@@ -19,7 +19,6 @@
         "silverstripe/recipe-ccl": "2.13.x-dev",
         "silverstripe/developer-docs": "4.13.x-dev",
         "silverstripe/registry": "2.6.x-dev",
-        "silverstripe/totp-authenticator": "4.6.x-dev",
         "silverstripe/mfa": "4.8.x-dev",
         "silverstripe/crontask": "2.6.x-dev",
         "silverstripe/gridfieldqueuedexport": "2.8.x-dev",
@@ -38,7 +37,17 @@
         "cwp/cwp-pdfexport": "1.5.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "3.3.x-dev",
         "symbiote/silverstripe-multivaluefield": "5.4.x-dev",
-        "tractorcow/silverstripe-fluent": "4.8.x-dev"
+        "tractorcow/silverstripe-fluent": "4.8.x-dev",
+        "silverstripe/frameworktest": "^0.4.12",
+        "silverstripe/recipe-testing": "^2",
+        "mikey179/vfsstream": "^1.6.10",
+        "silverstripe/totp-authenticator": "dev-pulls/4.6/test-timeout as 4.6.x-dev"
+    },
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:emteknetnz/recipe-kitchen-sink"
+        }
     },
     "require-dev": {
         "silverstripe/frameworktest": "^0.4.6",
@@ -61,8 +70,18 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platfrom": {
+            "php": "7.4"
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "conflict": {
+        "symfony/cache-contracts": "3.2.1",
+        "symfony/deprecation-contracts": "3.2.1",
+        "symfony/event-dispatcher-contracts": "3.2.1",
+        "symfony/service-contracts": "3.2.1",
+        "symfony/translation-contracts": "3.2.1"
+    }
 }
