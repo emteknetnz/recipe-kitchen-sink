@@ -42,7 +42,11 @@
         "mikey179/vfsstream": "^1.6.10",
         "silverstripe/totp-authenticator": "dev-pulls/4.6/test-timeout as 4.6.x-dev",
         "silverstripe/framework": "dev-pulls/4.13/test-timeout as 4.13.x-dev",
-        "silverstripe/webauthn-authenticator": "dev-pulls/4.7/test-timeout as 4.7.x-dev"
+        "silverstripe/webauthn-authenticator": "dev-pulls/4.7/test-timeout as 4.7.x-dev",
+        "phpunit/php-code-coverage": "9.2.25",
+        "phpunit/phpunit": "9.6.4",
+        "myclabs/deep-copy": "1.11.0",
+        "nikic/php-parser": "4.15.3"
     },
     "repositories": {
         "x0": {

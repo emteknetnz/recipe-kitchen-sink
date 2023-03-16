@@ -8,3 +8,9 @@
 .vagrant/
 .idea/
 /.graphql-generated
+.env.example
+/app
+behat.yml
+/public
+/themes
+phpcs.xml.dist
