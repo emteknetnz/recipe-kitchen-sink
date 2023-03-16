@@ -41,12 +41,17 @@
         "silverstripe/frameworktest": "^0.4.12",
         "silverstripe/recipe-testing": "^2",
         "mikey179/vfsstream": "^1.6.10",
-        "silverstripe/totp-authenticator": "dev-pulls/4.6/test-timeout as 4.6.x-dev"
+        "silverstripe/totp-authenticator": "dev-pulls/4.6/test-timeout as 4.6.x-dev",
+        "silverstripe/framework": "dev-pulls/4.13/test-timeout as 4.13.x-dev"
     },
     "repositories": {
         "x0": {
             "type": "vcs",
             "url": "git@github.com:emteknetnz/silverstripe-totp-authenticator"
+        },
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:emteknetnz/silverstripe-framework"
         }
     },
     "require-dev": {

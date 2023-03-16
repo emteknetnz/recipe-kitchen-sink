@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "315f01c2367b99e20cc469a8e1a8a763",
+    "content-hash": "184d65515c5388d17d18e547cc155f26",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -8370,16 +8370,16 @@
         },
         {
             "name": "silverstripe/framework",
-            "version": "4.13.x-dev",
+            "version": "dev-pulls/4.13/test-timeout",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "77cbe20ba9dbe9343c522666eaca5b8dc27c7a48"
+                "url": "https://github.com/emteknetnz/silverstripe-framework.git",
+                "reference": "003e2850a9f48a293a48d5e9edc37f4129f76989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/77cbe20ba9dbe9343c522666eaca5b8dc27c7a48",
-                "reference": "77cbe20ba9dbe9343c522666eaca5b8dc27c7a48",
+                "url": "https://api.github.com/repos/emteknetnz/silverstripe-framework/zipball/003e2850a9f48a293a48d5e9edc37f4129f76989",
+                "reference": "003e2850a9f48a293a48d5e9edc37f4129f76989",
                 "shasum": ""
             },
             "require": {
@@ -8440,40 +8440,50 @@
                 ]
             },
             "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Control\\": "src/Control/",
+                    "SilverStripe\\Control\\Tests\\": "tests/php/Control/",
+                    "SilverStripe\\Core\\": "src/Core/",
+                    "SilverStripe\\Core\\Tests\\": "tests/php/Core/",
+                    "SilverStripe\\Dev\\": "src/Dev/",
+                    "SilverStripe\\Dev\\Tests\\": "tests/php/Dev/",
+                    "SilverStripe\\Forms\\": "src/Forms/",
+                    "SilverStripe\\Forms\\Tests\\": "tests/php/Forms/",
+                    "SilverStripe\\i18n\\": "src/i18n/",
+                    "SilverStripe\\i18n\\Tests\\": "tests/php/i18n/",
+                    "SilverStripe\\Logging\\": "src/Logging/",
+                    "SilverStripe\\Logging\\Tests\\": "tests/php/Logging/",
+                    "SilverStripe\\ORM\\": "src/ORM/",
+                    "SilverStripe\\ORM\\Tests\\": "tests/php/ORM/",
+                    "SilverStripe\\Security\\": "src/Security/",
+                    "SilverStripe\\Security\\Tests\\": "tests/php/Security/",
+                    "SilverStripe\\View\\": "src/View/",
+                    "SilverStripe\\View\\Tests\\": "tests/php/View/",
+                    "SilverStripe\\Framework\\Tests\\Behaviour\\": "tests/behat/src/"
+                },
                 "files": [
                     "src/includes/constants.php"
                 ],
-                "psr-4": {
-                    "SilverStripe\\Dev\\": "src/Dev/",
-                    "SilverStripe\\ORM\\": "src/ORM/",
-                    "SilverStripe\\Core\\": "src/Core/",
-                    "SilverStripe\\View\\": "src/View/",
-                    "SilverStripe\\i18n\\": "src/i18n/",
-                    "SilverStripe\\Forms\\": "src/Forms/",
-                    "SilverStripe\\Control\\": "src/Control/",
-                    "SilverStripe\\Logging\\": "src/Logging/",
-                    "SilverStripe\\Security\\": "src/Security/",
-                    "SilverStripe\\Dev\\Tests\\": "tests/php/Dev/",
-                    "SilverStripe\\ORM\\Tests\\": "tests/php/ORM/",
-                    "SilverStripe\\Core\\Tests\\": "tests/php/Core/",
-                    "SilverStripe\\View\\Tests\\": "tests/php/View/",
-                    "SilverStripe\\i18n\\Tests\\": "tests/php/i18n/",
-                    "SilverStripe\\Forms\\Tests\\": "tests/php/Forms/",
-                    "SilverStripe\\Control\\Tests\\": "tests/php/Control/",
-                    "SilverStripe\\Logging\\Tests\\": "tests/php/Logging/",
-                    "SilverStripe\\Security\\Tests\\": "tests/php/Security/",
-                    "SilverStripe\\Framework\\Tests\\Behaviour\\": "tests/behat/src/"
-                },
                 "classmap": [
                     "thirdparty/swiftmailer"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "include-path": [
                 "src/",
                 "src/includes/",
                 "thirdparty/"
             ],
+            "scripts": {
+                "lint": [
+                    "phpcs src/ tests/php/ tests/behat/src/"
+                ],
+                "lint-clean": [
+                    "phpcbf src/ tests/php/ tests/behat/src/"
+                ],
+                "php-peg": [
+                    "php thirdparty/php-peg/cli.php src/View/SSTemplateParser.peg > src/View/SSTemplateParser.php"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8494,10 +8504,9 @@
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-framework/issues",
-                "source": "https://github.com/silverstripe/silverstripe-framework/tree/4.13"
+                "source": "https://github.com/emteknetnz/silverstripe-framework/tree/pulls/4.13/test-timeout"
             },
-            "time": "2023-03-10T03:29:44+00:00"
+            "time": "2023-03-16T03:59:23+00:00"
         },
         {
             "name": "silverstripe/frameworktest",
@@ -15701,6 +15710,12 @@
     ],
     "aliases": [
         {
+            "package": "silverstripe/framework",
+            "version": "dev-pulls/4.13/test-timeout",
+            "alias": "4.13.x-dev",
+            "alias_normalized": "4.13.9999999.9999999-dev"
+        },
+        {
             "package": "silverstripe/totp-authenticator",
             "version": "dev-pulls/4.6/test-timeout",
             "alias": "4.6.x-dev",
@@ -15741,6 +15756,7 @@
         "symbiote/silverstripe-multivaluefield": 20,
         "tractorcow/silverstripe-fluent": 20,
         "silverstripe/totp-authenticator": 20,
+        "silverstripe/framework": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
