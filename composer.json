@@ -26,7 +26,6 @@
         "silverstripe/textextraction": "3.5.x-dev",
         "silverstripe/realme": "4.4.x-dev",
         "silverstripe/ckan-registry": "1.7.x-dev",
-        "silverstripe/webauthn-authenticator": "4.7.x-dev",
         "silverstripe/security-extensions": "4.5.x-dev",
         "silverstripe/subsites": "2.8.x-dev",
         "silverstripe/html5": "2.4.x-dev",
@@ -42,7 +41,8 @@
         "silverstripe/recipe-testing": "^2",
         "mikey179/vfsstream": "^1.6.10",
         "silverstripe/totp-authenticator": "dev-pulls/4.6/test-timeout as 4.6.x-dev",
-        "silverstripe/framework": "dev-pulls/4.13/test-timeout as 4.13.x-dev"
+        "silverstripe/framework": "dev-pulls/4.13/test-timeout as 4.13.x-dev",
+        "silverstripe/webauthn-authenticator": "dev-pulls/4.7/test-timeout as 4.7.x-dev"
     },
     "repositories": {
         "x0": {
@@ -52,6 +52,10 @@
         "x1": {
             "type": "vcs",
             "url": "git@github.com:emteknetnz/silverstripe-framework"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:emteknetnz/silverstripe-webauthn-authenticator"
         }
     },
     "require-dev": {

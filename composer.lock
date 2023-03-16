@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "184d65515c5388d17d18e547cc155f26",
+    "content-hash": "3b3024433fa60499fe128e6cb681e620",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -11466,16 +11466,16 @@
         },
         {
             "name": "silverstripe/webauthn-authenticator",
-            "version": "4.7.x-dev",
+            "version": "dev-pulls/4.7/test-timeout",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe/silverstripe-webauthn-authenticator.git",
-                "reference": "741a14134e9023a9ec44becbb1daf0bc0848bec8"
+                "url": "https://github.com/emteknetnz/silverstripe-webauthn-authenticator.git",
+                "reference": "2559261e9d398abb56513db5ecc042c45da92375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-webauthn-authenticator/zipball/741a14134e9023a9ec44becbb1daf0bc0848bec8",
-                "reference": "741a14134e9023a9ec44becbb1daf0bc0848bec8",
+                "url": "https://api.github.com/repos/emteknetnz/silverstripe-webauthn-authenticator/zipball/2559261e9d398abb56513db5ecc042c45da92375",
+                "reference": "2559261e9d398abb56513db5ecc042c45da92375",
                 "shasum": ""
             },
             "require": {
@@ -11502,20 +11502,18 @@
                     "SilverStripe\\WebAuthn\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "description": "A WebAuthn authenticator that plugs into the silverstripe/mfa module",
             "keywords": [
-                "cms",
+                "CMS",
                 "silverstripe"
             ],
             "support": {
-                "issues": "https://github.com/silverstripe/silverstripe-webauthn-authenticator/issues",
-                "source": "https://github.com/silverstripe/silverstripe-webauthn-authenticator/tree/4.7"
+                "source": "https://github.com/emteknetnz/silverstripe-webauthn-authenticator/tree/pulls/4.7/test-timeout"
             },
-            "time": "2023-03-10T03:38:31+00:00"
+            "time": "2023-03-16T09:59:25+00:00"
         },
         {
             "name": "silverstripe/widgets",
@@ -15720,6 +15718,12 @@
             "version": "dev-pulls/4.6/test-timeout",
             "alias": "4.6.x-dev",
             "alias_normalized": "4.6.9999999.9999999-dev"
+        },
+        {
+            "package": "silverstripe/webauthn-authenticator",
+            "version": "dev-pulls/4.7/test-timeout",
+            "alias": "4.7.x-dev",
+            "alias_normalized": "4.7.9999999.9999999-dev"
         }
     ],
     "minimum-stability": "dev",
@@ -15743,7 +15747,6 @@
         "silverstripe/textextraction": 20,
         "silverstripe/realme": 20,
         "silverstripe/ckan-registry": 20,
-        "silverstripe/webauthn-authenticator": 20,
         "silverstripe/security-extensions": 20,
         "silverstripe/subsites": 20,
         "silverstripe/html5": 20,
@@ -15757,6 +15760,7 @@
         "tractorcow/silverstripe-fluent": 20,
         "silverstripe/totp-authenticator": 20,
         "silverstripe/framework": 20,
+        "silverstripe/webauthn-authenticator": 20,
         "silverstripe/graphql-devtools": 20
     },
     "prefer-stable": true,
