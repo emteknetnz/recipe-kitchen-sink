@@ -62,6 +62,32 @@
         "public-files": [
             "assets/*",
             "favicon.ico"
+        ],
+        "project-files-installed": [
+            ".env.example",
+            ".graphql-generated/_manifest_exclude",
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/assets.yml",
+            "app/_config/blog.yml",
+            "app/_config/contentblocks.yml",
+            "app/_config/email.yml",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/_config/theme.yml",
+            "app/src/BlocksPage.php",
+            "behat.yml",
+            "phpcs.xml.dist",
+            "phpunit.xml.dist"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "assets/.gitignore",
+            "assets/.htaccess",
+            "assets/web.config",
+            "favicon.ico",
+            "index.php",
+            "web.config"
         ]
     },
     "config": {
