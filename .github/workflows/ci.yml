@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Pre
         run: |
-          apt install sysstat
+          sudo apt install sysstat
   ci:
     name: CI
     # Only run cron on the silverstripe account
