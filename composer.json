@@ -97,7 +97,7 @@
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
         },
-        "platfrom": {
+        "platform": {
             "php": "7.4"
         }
     },
