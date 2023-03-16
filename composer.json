@@ -46,7 +46,7 @@
     "repositories": {
         "x0": {
             "type": "vcs",
-            "url": "git@github.com:emteknetnz/recipe-kitchen-sink"
+            "url": "git@github.com:emteknetnz/silverstripe-totp-authenticator"
         }
     },
     "require-dev": {
