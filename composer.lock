@@ -8374,12 +8374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/emteknetnz/silverstripe-framework.git",
-                "reference": "40ddcb0b621c19f1673ca10e25eb2098dc83a7a5"
+                "reference": "a7731873fad0139bd7eb35900e95166974bcac5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/emteknetnz/silverstripe-framework/zipball/40ddcb0b621c19f1673ca10e25eb2098dc83a7a5",
-                "reference": "40ddcb0b621c19f1673ca10e25eb2098dc83a7a5",
+                "url": "https://api.github.com/repos/emteknetnz/silverstripe-framework/zipball/a7731873fad0139bd7eb35900e95166974bcac5d",
+                "reference": "a7731873fad0139bd7eb35900e95166974bcac5d",
                 "shasum": ""
             },
             "require": {
@@ -8506,7 +8506,7 @@
             "support": {
                 "source": "https://github.com/emteknetnz/silverstripe-framework/tree/pulls/4.13/test-timeout"
             },
-            "time": "2023-03-20T03:39:36+00:00"
+            "time": "2023-03-20T03:55:38+00:00"
         },
         {
             "name": "silverstripe/frameworktest",
