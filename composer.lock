@@ -10549,12 +10549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-userforms.git",
-                "reference": "c60ccfbe9df10d4965254e235f1fcc70b2810b97"
+                "reference": "796fffec4fea188a6ca46796253ec59a54de1d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/c60ccfbe9df10d4965254e235f1fcc70b2810b97",
-                "reference": "c60ccfbe9df10d4965254e235f1fcc70b2810b97",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/796fffec4fea188a6ca46796253ec59a54de1d3c",
+                "reference": "796fffec4fea188a6ca46796253ec59a54de1d3c",
                 "shasum": ""
             },
             "require": {
@@ -10637,7 +10637,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/7/fieldlist-typing"
             },
-            "time": "2024-05-13T06:56:02+00:00"
+            "time": "2024-05-13T07:22:24+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
