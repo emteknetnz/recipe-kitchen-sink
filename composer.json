@@ -38,7 +38,13 @@
         "colymba/gridfield-bulk-editing-tools": "5.x-dev",
         "tractorcow/silverstripe-fluent": "8.x-dev",
         "silverstripe/dynamodb": "6.x-dev",
-        "silverstripe/linkfield": "5.x-dev"
+        "silverstripe/linkfield": "5.x-dev",
+        "silverstripe/framework": "dev-pulls/6/fieldlist-strongly-type as 6.x-dev",
+        "silverstripe/frameworktest": "2.x-dev",
+        "silverstripe/recipe-testing": "^4",
+        "mikey179/vfsstream": "^1.6.10",
+        "silverstripe/userforms": "dev-pulls/7/fieldlist-typing as 7.x-dev",
+        "symbiote/silverstripe-advancedworkflow": "dev-pulls/7/fieldlist-typing as 7.x-dev"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",
@@ -61,8 +67,32 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework"
+        },
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-userforms"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-advancedworkflow"
+        }
+    },
+    "conflict": {
+        "symfony/cache-contracts": "3.2.1",
+        "symfony/deprecation-contracts": "3.2.1",
+        "symfony/event-dispatcher-contracts": "3.2.1",
+        "symfony/service-contracts": "3.2.1",
+        "symfony/translation-contracts": "3.2.1"
+    }
 }
