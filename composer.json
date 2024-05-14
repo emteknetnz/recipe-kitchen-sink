@@ -42,9 +42,7 @@
         "silverstripe/framework": "dev-pulls/6/fieldlist-strongly-type as 6.x-dev",
         "silverstripe/frameworktest": "2.x-dev",
         "silverstripe/recipe-testing": "^4",
-        "mikey179/vfsstream": "^1.6.10",
-        "silverstripe/userforms": "dev-pulls/7/fieldlist-typing as 7.x-dev",
-        "symbiote/silverstripe-advancedworkflow": "dev-pulls/7/fieldlist-typing as 7.x-dev"
+        "mikey179/vfsstream": "^1.6.10"
     },
     "require-dev": {
         "silverstripe/frameworktest": "^2",
@@ -78,14 +76,6 @@
         "x0": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-framework"
-        },
-        "x1": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-userforms"
-        },
-        "x2": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-advancedworkflow"
         }
     },
     "conflict": {
