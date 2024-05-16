@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88b25239f046ef480e87af1a5c06f78d",
+    "content-hash": "925df557490030465bc42f7d9a8bcf5b",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -1580,16 +1580,16 @@
         },
         {
             "name": "dnadesign/silverstripe-elemental",
-            "version": "dev-pulls/6/fix-casted-copy",
+            "version": "6.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "ae29721a3b95c9e5d4a53c10bdcb87585a6740bb"
+                "url": "https://github.com/silverstripe/silverstripe-elemental.git",
+                "reference": "6b0720421e6e8b390a165d39c28ca9f88cbcd2da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/ae29721a3b95c9e5d4a53c10bdcb87585a6740bb",
-                "reference": "ae29721a3b95c9e5d4a53c10bdcb87585a6740bb",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-elemental/zipball/6b0720421e6e8b390a165d39c28ca9f88cbcd2da",
+                "reference": "6b0720421e6e8b390a165d39c28ca9f88cbcd2da",
                 "shasum": ""
             },
             "require": {
@@ -1633,6 +1633,7 @@
                     "DNADesign\\Elemental\\Tests\\": "tests/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1644,15 +1645,16 @@
             ],
             "description": "Elemental pagetype and collection of Elements",
             "keywords": [
-                "content blocks",
+                "Content Blocks",
                 "element",
                 "elemental",
                 "silverstripe"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/6/fix-casted-copy"
+                "issues": "https://github.com/silverstripe/silverstripe-elemental/issues",
+                "source": "https://github.com/silverstripe/silverstripe-elemental/tree/6"
             },
-            "time": "2024-05-15T05:35:03+00:00"
+            "time": "2024-05-14T06:11:26+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -14895,12 +14897,6 @@
     ],
     "aliases": [
         {
-            "package": "dnadesign/silverstripe-elemental",
-            "version": "dev-pulls/6/fix-casted-copy",
-            "alias": "6.x-dev",
-            "alias_normalized": "6.9999999.9999999.9999999-dev"
-        },
-        {
             "package": "silverstripe/framework",
             "version": "dev-pulls/6/fieldlist-strongly-type",
             "alias": "6.x-dev",
@@ -14943,7 +14939,6 @@
         "silverstripe/dynamodb": 20,
         "silverstripe/linkfield": 20,
         "silverstripe/framework": 20,
-        "dnadesign/silverstripe-elemental": 20,
         "silverstripe/frameworktest": 20,
         "silverstripe/graphql-devtools": 20
     },

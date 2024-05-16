@@ -40,7 +40,6 @@
         "silverstripe/dynamodb": "6.x-dev",
         "silverstripe/linkfield": "5.x-dev",
         "silverstripe/framework": "dev-pulls/6/fieldlist-strongly-type as 6.x-dev",
-        "dnadesign/silverstripe-elemental": "dev-pulls/6/fix-casted-copy as 6.x-dev",
         "silverstripe/frameworktest": "2.x-dev",
         "silverstripe/recipe-testing": "^4",
         "mikey179/vfsstream": "^1.6.10"
@@ -77,10 +76,6 @@
         "x0": {
             "type": "vcs",
             "url": "git@github.com:creative-commoners/silverstripe-framework"
-        },
-        "x1": {
-            "type": "vcs",
-            "url": "git@github.com:creative-commoners/silverstripe-elemental"
         }
     },
     "conflict": {
