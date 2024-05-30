@@ -6722,12 +6722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-admin.git",
-                "reference": "0fb907ee7f16d05bcb32ccea4b8e11b5620d9a3e"
+                "reference": "5cd83e67cd5e584b5b9d27766ac2502d0e53498b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/0fb907ee7f16d05bcb32ccea4b8e11b5620d9a3e",
-                "reference": "0fb907ee7f16d05bcb32ccea4b8e11b5620d9a3e",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/5cd83e67cd5e584b5b9d27766ac2502d0e53498b",
+                "reference": "5cd83e67cd5e584b5b9d27766ac2502d0e53498b",
                 "shasum": ""
             },
             "require": {
@@ -6791,7 +6791,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-admin/tree/pulls/3/react-hook-form-functional"
             },
-            "time": "2024-05-29T04:51:52+00:00"
+            "time": "2024-05-30T06:16:36+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
