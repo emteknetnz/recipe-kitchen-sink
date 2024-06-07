@@ -15122,12 +15122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tractorcow-farm/silverstripe-fluent.git",
-                "reference": "392d0199bccdc5503d396a6c5131e478f9daf494"
+                "reference": "87abf4c468e8b3296a68e5d655a4eca0ea34192b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tractorcow-farm/silverstripe-fluent/zipball/392d0199bccdc5503d396a6c5131e478f9daf494",
-                "reference": "392d0199bccdc5503d396a6c5131e478f9daf494",
+                "url": "https://api.github.com/repos/tractorcow-farm/silverstripe-fluent/zipball/87abf4c468e8b3296a68e5d655a4eca0ea34192b",
+                "reference": "87abf4c468e8b3296a68e5d655a4eca0ea34192b",
                 "shasum": ""
             },
             "require": {
@@ -15195,7 +15195,7 @@
                 "issues": "http://github.com/tractorcow-farm/silverstripe-fluent/issues",
                 "source": "https://github.com/tractorcow-farm/silverstripe-fluent/tree/7"
             },
-            "time": "2024-05-30T21:52:26+00:00"
+            "time": "2024-06-06T23:11:54+00:00"
         },
         {
             "name": "tractorcow/silverstripe-proxy-db",
