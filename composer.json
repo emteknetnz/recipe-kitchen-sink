@@ -6,7 +6,6 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": "^8.1",
-        "silverstripe/recipe-plugin": "2.0.x-dev",
         "silverstripe/installer": "5.2.x-dev",
         "silverstripe/recipe-authoring-tools": "2.2.x-dev",
         "silverstripe/recipe-blog": "2.2.x-dev",
@@ -16,35 +15,73 @@
         "silverstripe/recipe-services": "2.2.x-dev",
         "silverstripe/recipe-content-blocks": "3.2.x-dev",
         "silverstripe/auditor": "3.1.x-dev",
-        "silverstripe/developer-docs": "5.2.x-dev",
-        "silverstripe/environmentcheck": "3.0.x-dev",
-        "silverstripe/hybridsessions": "3.0.x-dev",
+        "silverstripe/developer-docs": "dev-pulls/5.2/noself as 5.2.x-dev",
+        "silverstripe/environmentcheck": "dev-pulls/3.0/remove-self as 3.0.x-dev",
+        "silverstripe/hybridsessions": "dev-pulls/3.0/remove-self as 3.0.x-dev",
         "silverstripe/registry": "3.2.x-dev",
         "silverstripe/totp-authenticator": "5.2.x-dev",
-        "silverstripe/mfa": "5.2.x-dev",
-        "silverstripe/crontask": "3.0.x-dev",
+        "silverstripe/mfa": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/crontask": "dev-pulls/3.0/remove-self as 3.0.x-dev",
         "silverstripe/gridfieldqueuedexport": "3.2.x-dev",
-        "silverstripe/ldap": "2.2.x-dev",
-        "silverstripe/textextraction": "4.1.x-dev",
-        "silverstripe/realme": "5.3.x-dev",
-        "silverstripe/webauthn-authenticator": "5.2.x-dev",
-        "silverstripe/subsites": "3.2.x-dev",
-        "silverstripe/lumberjack": "3.1.x-dev",
-        "silverstripe/staticpublishqueue": "6.2.x-dev",
+        "silverstripe/ldap": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/textextraction": "dev-pulls/4.1/remove-self as 4.1.x-dev",
+        "silverstripe/webauthn-authenticator": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/subsites": "dev-pulls/3.2/remove-self as 3.2.x-dev",
+        "silverstripe/lumberjack": "dev-pulls/3.1/remove-self as 3.1.x-dev",
+        "silverstripe/staticpublishqueue": "dev-pulls/6.2/remove-self as 6.2.x-dev",
         "cwp/starter-theme": "4.1.x-dev",
-        "cwp/agency-extensions": "3.2.x-dev",
+        "cwp/agency-extensions": "dev-pulls/3.2/remove-self as 3.2.x-dev",
         "cwp/watea-theme": "4.1.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "4.1.x-dev",
         "symbiote/silverstripe-multivaluefield": "6.1.x-dev",
-        "symbiote/silverstripe-gridfieldextensions": "4.0.x-dev",
-        "symbiote/silverstripe-queuedjobs": "5.1.x-dev",
+        "symbiote/silverstripe-gridfieldextensions": "dev-pulls/4.0/remove-self as 4.0.x-dev",
+        "symbiote/silverstripe-queuedjobs": "dev-pulls/5.1/remove-self as 5.1.x-dev",
         "colymba/gridfield-bulk-editing-tools": "4.0.x-dev",
         "tractorcow/silverstripe-fluent": "7.1.x-dev",
         "silverstripe/dynamodb": "5.0.x-dev",
-        "silverstripe/linkfield": "4.0.x-dev"
+        "silverstripe/linkfield": "dev-pulls/4.0/remove-self as 4.0.x-dev",
+        "silverstripe/frameworktest": "dev-pulls/1/remove-self as 1.x-dev",
+        "silverstripe/recipe-testing": "^3",
+        "mikey179/vfsstream": "^1.6.10",
+        "bringyourownideas/silverstripe-composer-update-checker": "dev-pulls/4.1/remove-self as 4.1.x-dev",
+        "cwp/cwp": "dev-pulls/3.0/remove-self as 3.0.x-dev",
+        "cwp/cwp-core": "dev-pulls/3.0/remove-self as 3.0.x-dev",
+        "dnadesign/silverstripe-elemental": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/admin": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/asset-admin": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/assets": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/behat-extension": "dev-pulls/5.3/remove-self as 5.3.x-dev",
+        "silverstripe/blog": "dev-pulls/4.2/remove-self as 4.2.x-dev",
+        "silverstripe/cms": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/config": "dev-pulls/2.1/remove-self as 2.1.x-dev",
+        "silverstripe/contentreview": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/documentconverter": "dev-pulls/3.2/remove-self as 3.2.x-dev",
+        "silverstripe/errorpage": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/event-dispatcher": "dev-pulls/1.0/remove-self as 1.0.x-dev",
+        "silverstripe/externallinks": "dev-pulls/pulls/3.2/remove-self/remove-self as 3.2.x-dev",
+        "silverstripe/framework": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/graphql": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/login-forms": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/markdown-php-codesniffer": "dev-pulls/1.0/remove-self as 1.0.x-dev",
+        "silverstripe/mink-facebook-web-driver": "dev-pulls/2/remove-self as 2.x-dev",
+        "silverstripe/realme": "dev-pulls/5.3/remove-self as 5.3.x-dev",
+        "silverstripe/reports": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/restfulserver": "dev-pulls/3.0/remove-self as 3.0.x-dev",
+        "silverstripe/securityreport": "dev-pulls/3.1/remove-self as 3.1.x-dev",
+        "silverstripe/session-manager": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/sharedraftcontent": "dev-pulls/3.2/remove-self as 3.2.x-dev",
+        "silverstripe/siteconfig": "dev-pulls/5.2/remove-self as 5.2.x-dev",
+        "silverstripe/sitewidecontent-report": "dev-pulls/4.2/remove-self as 4.2.x-dev",
+        "silverstripe/spamprotection": "dev-pulls/4.2/remove-self as 4.2.x-dev",
+        "silverstripe/tagfield": "dev-pulls/3.2/remove-self as 3.2.x-dev",
+        "silverstripe/testsession": "dev-pulls/3/remove-self as 3.x-dev",
+        "silverstripe/userforms": "dev-pulls/6.2/remove-self as 6.2.x-dev",
+        "silverstripe/versioned": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/versioned-admin": "dev-pulls/2.2/remove-self as 2.2.x-dev",
+        "silverstripe/versionfeed": "dev-pulls/3.2/remove-self as 3.2.x-dev",
+        "symbiote/silverstripe-advancedworkflow": "dev-pulls/6.2/remove-self as 6.2.x-dev"
     },
     "require-dev": {
-        "silverstripe/frameworktest": "^1",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^3",
         "mikey179/vfsstream": "^1.6"
@@ -64,8 +101,232 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/developer-docs"
+        },
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-composer-update-checker"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp-agencyextensions"
+        },
+        "x3": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp"
+        },
+        "x4": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/cwp-core"
+        },
+        "x5": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-elemental"
+        },
+        "x6": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-admin"
+        },
+        "x7": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-asset-admin"
+        },
+        "x8": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-assets"
+        },
+        "x9": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-behat-extension"
+        },
+        "x10": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-blog"
+        },
+        "x11": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-cms"
+        },
+        "x12": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-config"
+        },
+        "x13": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-contentreview"
+        },
+        "x14": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-crontask"
+        },
+        "x15": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-documentconverter"
+        },
+        "x16": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-environmentcheck"
+        },
+        "x17": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-errorpage"
+        },
+        "x18": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-event-dispatcher"
+        },
+        "x19": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-externallinks"
+        },
+        "x20": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework"
+        },
+        "x21": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-frameworktest"
+        },
+        "x22": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-graphql"
+        },
+        "x23": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-hybridsessions"
+        },
+        "x24": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-ldap"
+        },
+        "x25": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-linkfield"
+        },
+        "x26": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-login-forms"
+        },
+        "x27": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-lumberjack"
+        },
+        "x28": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/markdown-php-codesniffer"
+        },
+        "x29": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-mfa"
+        },
+        "x30": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/MinkFacebookWebDriver"
+        },
+        "x31": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-realme"
+        },
+        "x33": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-reports"
+        },
+        "x34": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-restfulserver"
+        },
+        "x35": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-securityreport"
+        },
+        "x36": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-session-manager"
+        },
+        "x37": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-sharedraftcontent"
+        },
+        "x38": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-siteconfig"
+        },
+        "x39": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-sitewidecontent-report"
+        },
+        "x40": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-spamprotection"
+        },
+        "x41": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-staticpublishqueue"
+        },
+        "x42": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-subsites"
+        },
+        "x43": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-tagfield"
+        },
+        "x44": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-testsession"
+        },
+        "x45": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-textextraction"
+        },
+        "x46": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-userforms"
+        },
+        "x48": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned"
+        },
+        "x49": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versioned-admin"
+        },
+        "x50": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-versionfeed"
+        },
+        "x51": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-webauthn-authenticator"
+        },
+        "x52": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-advancedworkflow"
+        },
+        "x53": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-gridfieldextensions"
+        },
+        "x54": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-queuedjobs"
+        }
+    },
+    "conflict": {
+        "symfony/cache-contracts": "3.2.1",
+        "symfony/deprecation-contracts": "3.2.1",
+        "symfony/event-dispatcher-contracts": "3.2.1",
+        "symfony/service-contracts": "3.2.1",
+        "symfony/translation-contracts": "3.2.1"
+    }
 }
