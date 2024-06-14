@@ -8265,12 +8265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-cms.git",
-                "reference": "67a2fcee87c6c64d8a945daabadd9324bbabe5e9"
+                "reference": "d1f107122161921797be08290a0ab185e521674c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-cms/zipball/67a2fcee87c6c64d8a945daabadd9324bbabe5e9",
-                "reference": "67a2fcee87c6c64d8a945daabadd9324bbabe5e9",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-cms/zipball/d1f107122161921797be08290a0ab185e521674c",
+                "reference": "d1f107122161921797be08290a0ab185e521674c",
                 "shasum": ""
             },
             "require": {
@@ -8337,7 +8337,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-cms/tree/pulls/5.2/remove-self"
             },
-            "time": "2024-06-05T03:26:06+00:00"
+            "time": "2024-06-14T05:23:56+00:00"
         },
         {
             "name": "silverstripe/config",
