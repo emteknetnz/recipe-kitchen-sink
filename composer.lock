@@ -1909,12 +1909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "e7e05aaa8752aedd18bbf2ebcc64dd67c8b9189a"
+                "reference": "51b178cdb75e1676180620de38608ec59e028c8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/e7e05aaa8752aedd18bbf2ebcc64dd67c8b9189a",
-                "reference": "e7e05aaa8752aedd18bbf2ebcc64dd67c8b9189a",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/51b178cdb75e1676180620de38608ec59e028c8a",
+                "reference": "51b178cdb75e1676180620de38608ec59e028c8a",
                 "shasum": ""
             },
             "require": {
@@ -1977,7 +1977,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/5.2/remove-self"
             },
-            "time": "2024-06-05T03:14:46+00:00"
+            "time": "2024-06-14T08:33:51+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -7726,12 +7726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-admin.git",
-                "reference": "229a471b4450e6d0e85b5f6f3c69b6ed1aa52b0d"
+                "reference": "7daeee4d9dd700c055c82c998ee6c59575a76dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/229a471b4450e6d0e85b5f6f3c69b6ed1aa52b0d",
-                "reference": "229a471b4450e6d0e85b5f6f3c69b6ed1aa52b0d",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/7daeee4d9dd700c055c82c998ee6c59575a76dba",
+                "reference": "7daeee4d9dd700c055c82c998ee6c59575a76dba",
                 "shasum": ""
             },
             "require": {
@@ -7795,7 +7795,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-admin/tree/pulls/2.2/remove-self"
             },
-            "time": "2024-06-05T03:15:29+00:00"
+            "time": "2024-06-14T07:59:34+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -7803,12 +7803,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-asset-admin.git",
-                "reference": "c44ea8a8b425c00d402e16761548f63edfc3d05a"
+                "reference": "1f32e3304a67cc9d7a1d59ae9db0a59d4641a337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/c44ea8a8b425c00d402e16761548f63edfc3d05a",
-                "reference": "c44ea8a8b425c00d402e16761548f63edfc3d05a",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/1f32e3304a67cc9d7a1d59ae9db0a59d4641a337",
+                "reference": "1f32e3304a67cc9d7a1d59ae9db0a59d4641a337",
                 "shasum": ""
             },
             "require": {
@@ -7858,7 +7858,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-asset-admin/tree/pulls/2.2/remove-self"
             },
-            "time": "2024-06-05T03:16:09+00:00"
+            "time": "2024-06-14T09:38:15+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -7866,12 +7866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-assets.git",
-                "reference": "37fc276c150062c4102879d5e8a69c3ca21db724"
+                "reference": "7979fd73b88ed3a506b596ed99836890a20440e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-assets/zipball/37fc276c150062c4102879d5e8a69c3ca21db724",
-                "reference": "37fc276c150062c4102879d5e8a69c3ca21db724",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-assets/zipball/7979fd73b88ed3a506b596ed99836890a20440e0",
+                "reference": "7979fd73b88ed3a506b596ed99836890a20440e0",
                 "shasum": ""
             },
             "require": {
@@ -7933,7 +7933,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-assets/tree/pulls/2.2/remove-self"
             },
-            "time": "2024-06-05T04:56:42+00:00"
+            "time": "2024-06-14T09:39:51+00:00"
         },
         {
             "name": "silverstripe/auditor",
@@ -8265,12 +8265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-cms.git",
-                "reference": "d1f107122161921797be08290a0ab185e521674c"
+                "reference": "f818b5f4f86fbc25475c4aa76794886ded7d66bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-cms/zipball/d1f107122161921797be08290a0ab185e521674c",
-                "reference": "d1f107122161921797be08290a0ab185e521674c",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-cms/zipball/f818b5f4f86fbc25475c4aa76794886ded7d66bc",
+                "reference": "f818b5f4f86fbc25475c4aa76794886ded7d66bc",
                 "shasum": ""
             },
             "require": {
@@ -8337,7 +8337,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-cms/tree/pulls/5.2/remove-self"
             },
-            "time": "2024-06-14T05:23:56+00:00"
+            "time": "2024-06-14T10:05:04+00:00"
         },
         {
             "name": "silverstripe/config",
@@ -8518,12 +8518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/developer-docs.git",
-                "reference": "530e4d582a4aa8e11ee2c26bb78e00330fb81f3a"
+                "reference": "42aa68969abad738a5ad010b039edbd66b0ce442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/developer-docs/zipball/530e4d582a4aa8e11ee2c26bb78e00330fb81f3a",
-                "reference": "530e4d582a4aa8e11ee2c26bb78e00330fb81f3a",
+                "url": "https://api.github.com/repos/creative-commoners/developer-docs/zipball/42aa68969abad738a5ad010b039edbd66b0ce442",
+                "reference": "42aa68969abad738a5ad010b039edbd66b0ce442",
                 "shasum": ""
             },
             "require-dev": {
@@ -8555,7 +8555,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/developer-docs/tree/pulls/5.2/noself"
             },
-            "time": "2024-06-05T04:59:36+00:00"
+            "time": "2024-06-14T09:27:44+00:00"
         },
         {
             "name": "silverstripe/documentconverter",
@@ -8833,12 +8833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-errorpage.git",
-                "reference": "ae66e6fedb4ab0561ee5bfe40b9574620c333c06"
+                "reference": "f70cfc994d4d358835d55801e21372ddd48848b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-errorpage/zipball/ae66e6fedb4ab0561ee5bfe40b9574620c333c06",
-                "reference": "ae66e6fedb4ab0561ee5bfe40b9574620c333c06",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-errorpage/zipball/f70cfc994d4d358835d55801e21372ddd48848b7",
+                "reference": "f70cfc994d4d358835d55801e21372ddd48848b7",
                 "shasum": ""
             },
             "require": {
@@ -8888,7 +8888,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-errorpage/tree/pulls/2.2/remove-self"
             },
-            "time": "2024-06-05T04:11:49+00:00"
+            "time": "2024-06-14T09:42:16+00:00"
         },
         {
             "name": "silverstripe/event-dispatcher",
@@ -9011,12 +9011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-framework.git",
-                "reference": "87738f430a27881fa793c5cf02f8c0cc16de60f1"
+                "reference": "66667c5264c0b86369cd440f07db129d956342e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/87738f430a27881fa793c5cf02f8c0cc16de60f1",
-                "reference": "87738f430a27881fa793c5cf02f8c0cc16de60f1",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-framework/zipball/66667c5264c0b86369cd440f07db129d956342e9",
+                "reference": "66667c5264c0b86369cd440f07db129d956342e9",
                 "shasum": ""
             },
             "require": {
@@ -9146,7 +9146,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-framework/tree/pulls/5.2/remove-self"
             },
-            "time": "2024-06-10T02:58:06+00:00"
+            "time": "2024-06-14T10:15:23+00:00"
         },
         {
             "name": "silverstripe/frameworktest",
@@ -9213,12 +9213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-graphql.git",
-                "reference": "63e5a1a89ff732e19d202d288f7ca3e9a5d1b26f"
+                "reference": "fb18d9d3a0de78374b38f70fea3583cfb8405b70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-graphql/zipball/63e5a1a89ff732e19d202d288f7ca3e9a5d1b26f",
-                "reference": "63e5a1a89ff732e19d202d288f7ca3e9a5d1b26f",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-graphql/zipball/fb18d9d3a0de78374b38f70fea3583cfb8405b70",
+                "reference": "fb18d9d3a0de78374b38f70fea3583cfb8405b70",
                 "shasum": ""
             },
             "require": {
@@ -9267,7 +9267,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-graphql/tree/pulls/5.2/remove-self"
             },
-            "time": "2024-06-05T05:44:17+00:00"
+            "time": "2024-06-14T09:46:04+00:00"
         },
         {
             "name": "silverstripe/gridfieldqueuedexport",
@@ -10672,12 +10672,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-restfulserver.git",
-                "reference": "ef4297369dccf87b974f54a6b5db1afb53d9d17a"
+                "reference": "d395845eb1b2641ec3426efe00ec47e29ea3badd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-restfulserver/zipball/ef4297369dccf87b974f54a6b5db1afb53d9d17a",
-                "reference": "ef4297369dccf87b974f54a6b5db1afb53d9d17a",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-restfulserver/zipball/d395845eb1b2641ec3426efe00ec47e29ea3badd",
+                "reference": "d395845eb1b2641ec3426efe00ec47e29ea3badd",
                 "shasum": ""
             },
             "require": {
@@ -10718,7 +10718,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-restfulserver/tree/pulls/3.0/remove-self"
             },
-            "time": "2024-06-05T04:34:54+00:00"
+            "time": "2024-06-14T09:46:22+00:00"
         },
         {
             "name": "silverstripe/securityreport",
@@ -10726,12 +10726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-securityreport.git",
-                "reference": "6f44fd850b5ee7ca57c90a4c24426b9c5a9c9356"
+                "reference": "32575f49152e67642aadbf0befdfc00375a1feae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-securityreport/zipball/6f44fd850b5ee7ca57c90a4c24426b9c5a9c9356",
-                "reference": "6f44fd850b5ee7ca57c90a4c24426b9c5a9c9356",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-securityreport/zipball/32575f49152e67642aadbf0befdfc00375a1feae",
+                "reference": "32575f49152e67642aadbf0befdfc00375a1feae",
                 "shasum": ""
             },
             "require": {
@@ -10773,7 +10773,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-securityreport/tree/pulls/3.1/remove-self"
             },
-            "time": "2024-06-05T04:34:59+00:00"
+            "time": "2024-06-14T09:47:54+00:00"
         },
         {
             "name": "silverstripe/segment-field",
@@ -10883,12 +10883,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-session-manager.git",
-                "reference": "a60e32aa3fea90d684dab96efec5b133c6142964"
+                "reference": "75524242cbc7d54bc342772a1251773a75542f0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-session-manager/zipball/a60e32aa3fea90d684dab96efec5b133c6142964",
-                "reference": "a60e32aa3fea90d684dab96efec5b133c6142964",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-session-manager/zipball/75524242cbc7d54bc342772a1251773a75542f0c",
+                "reference": "75524242cbc7d54bc342772a1251773a75542f0c",
                 "shasum": ""
             },
             "require": {
@@ -10947,7 +10947,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-session-manager/tree/pulls/2.2/remove-self"
             },
-            "time": "2024-06-05T04:35:05+00:00"
+            "time": "2024-06-14T09:48:37+00:00"
         },
         {
             "name": "silverstripe/sharedraftcontent",
@@ -11150,12 +11150,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-spamprotection.git",
-                "reference": "7fc7a0f8298de1d74270bc9b4e2df8a26620f8d1"
+                "reference": "7ad6f8584fe596f288d5446ec445dd81307e0b2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-spamprotection/zipball/7fc7a0f8298de1d74270bc9b4e2df8a26620f8d1",
-                "reference": "7fc7a0f8298de1d74270bc9b4e2df8a26620f8d1",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-spamprotection/zipball/7ad6f8584fe596f288d5446ec445dd81307e0b2c",
+                "reference": "7ad6f8584fe596f288d5446ec445dd81307e0b2c",
                 "shasum": ""
             },
             "require": {
@@ -11203,7 +11203,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-spamprotection/tree/pulls/4.2/remove-self"
             },
-            "time": "2024-06-05T04:35:28+00:00"
+            "time": "2024-06-14T09:49:04+00:00"
         },
         {
             "name": "silverstripe/staticpublishqueue",
@@ -11211,12 +11211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-staticpublishqueue.git",
-                "reference": "be29067208a9f88267e80d51211c391894941606"
+                "reference": "ade614c2314341d6f1686ffa4bfd726c21004976"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-staticpublishqueue/zipball/be29067208a9f88267e80d51211c391894941606",
-                "reference": "be29067208a9f88267e80d51211c391894941606",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-staticpublishqueue/zipball/ade614c2314341d6f1686ffa4bfd726c21004976",
+                "reference": "ade614c2314341d6f1686ffa4bfd726c21004976",
                 "shasum": ""
             },
             "require": {
@@ -11274,7 +11274,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-staticpublishqueue/tree/pulls/6.2/remove-self"
             },
-            "time": "2024-06-05T04:35:34+00:00"
+            "time": "2024-06-14T09:49:21+00:00"
         },
         {
             "name": "silverstripe/subsites",
@@ -11648,12 +11648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-userforms.git",
-                "reference": "cf892e807d72489244662e318bf2baf924ed82d0"
+                "reference": "6541365a8ea00a5692a649b5becbb8769055dcf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/cf892e807d72489244662e318bf2baf924ed82d0",
-                "reference": "cf892e807d72489244662e318bf2baf924ed82d0",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-userforms/zipball/6541365a8ea00a5692a649b5becbb8769055dcf8",
+                "reference": "6541365a8ea00a5692a649b5becbb8769055dcf8",
                 "shasum": ""
             },
             "require": {
@@ -11736,7 +11736,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-userforms/tree/pulls/6.2/remove-self"
             },
-            "time": "2024-06-05T04:36:03+00:00"
+            "time": "2024-06-14T09:49:48+00:00"
         },
         {
             "name": "silverstripe/vendor-plugin",
@@ -12662,12 +12662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-queuedjobs.git",
-                "reference": "7a9b254cce3a264605b8b76e31f0999c21d52dde"
+                "reference": "793e73da01bb91394ab4576bdc258fc6bdaf8e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-queuedjobs/zipball/7a9b254cce3a264605b8b76e31f0999c21d52dde",
-                "reference": "7a9b254cce3a264605b8b76e31f0999c21d52dde",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-queuedjobs/zipball/793e73da01bb91394ab4576bdc258fc6bdaf8e86",
+                "reference": "793e73da01bb91394ab4576bdc258fc6bdaf8e86",
                 "shasum": ""
             },
             "require": {
@@ -12718,7 +12718,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-queuedjobs/tree/pulls/5.1/remove-self"
             },
-            "time": "2024-06-05T04:36:49+00:00"
+            "time": "2024-06-14T09:50:38+00:00"
         },
         {
             "name": "symfony/cache",
