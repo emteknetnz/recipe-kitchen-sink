@@ -28,7 +28,7 @@
         "silverstripe/textextraction": "5.x-dev",
         "silverstripe/realme": "6.x-dev",
         "silverstripe/webauthn-authenticator": "6.x-dev",
-        "silverstripe/subsites": "4.x-dev",
+        "silverstripe/subsites": "dev-pulls/4/scaffolded-fields as 4.x-dev",
         "silverstripe/lumberjack": "4.x-dev",
         "silverstripe/staticpublishqueue": "7.x-dev",
         "dnadesign/silverstripe-elemental-userforms": "5.x-dev",
@@ -38,10 +38,18 @@
         "colymba/gridfield-bulk-editing-tools": "5.x-dev",
         "tractorcow/silverstripe-fluent": "8.x-dev",
         "silverstripe/dynamodb": "6.x-dev",
-        "silverstripe/linkfield": "5.x-dev"
+        "silverstripe/linkfield": "dev-pulls/5/scaffolded-fields as 5.x-dev",
+        "silverstripe/frameworktest": "2.x-dev",
+        "silverstripe/recipe-testing": "^4",
+        "mikey179/vfsstream": "^1.6.10",
+        "silverstripe/blog": "dev-pulls/5/scaffolded-fields as 5.x-dev",
+        "silverstripe/cms": "dev-pulls/6/scaffolded-fields as 6.x-dev",
+        "silverstripe/framework": "dev-pulls/6/scaffolded-fields as 6.x-dev",
+        "silverstripe/taxonomy": "dev-pulls/4/scaffolded-fields as 4.x-dev",
+        "silverstripe/assets": "dev-pulls/3/scaffolded-fields as 3.x-dev"
     },
     "require-dev": {
-        "silverstripe/frameworktest": "^2",
+        "silverstripe/frameworktest": "dev-pulls/2/scaffolded-fields as 2.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^4",
         "mikey179/vfsstream": "^1.6"
@@ -53,6 +61,31 @@
         "public-files": [
             "assets/*",
             "favicon.ico"
+        ],
+        "project-files-installed": [
+            ".env.example",
+            ".graphql-generated/_manifest_exclude",
+            ".htaccess",
+            "app/.htaccess",
+            "app/_config/blog.yml",
+            "app/_config/contentblocks.yml",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/_config/theme.yml",
+            "app/src/BlocksPage.php",
+            "app/src/Page.php",
+            "app/src/PageController.php",
+            "behat.yml",
+            "phpunit.xml.dist"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "assets/.gitignore",
+            "assets/.htaccess",
+            "assets/web.config",
+            "favicon.ico",
+            "index.php",
+            "web.config"
         ]
     },
     "config": {
@@ -61,8 +94,52 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     },
     "prefer-stable": true,
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "repositories": {
+        "x0": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-subsites"
+        },
+        "x1": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-blog"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-cms"
+        },
+        "x3": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-linkfield"
+        },
+        "x4": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-framework"
+        },
+        "x5": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-taxonomy"
+        },
+        "x6": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-assets"
+        },
+        "x7": {
+            "type": "vcs",
+            "url": "git@github.com:creative-commoners/silverstripe-frameworktest"
+        }
+    },
+    "conflict": {
+        "symfony/cache-contracts": "3.2.1",
+        "symfony/deprecation-contracts": "3.2.1",
+        "symfony/event-dispatcher-contracts": "3.2.1",
+        "symfony/service-contracts": "3.2.1",
+        "symfony/translation-contracts": "3.2.1"
+    }
 }
