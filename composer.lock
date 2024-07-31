@@ -6856,12 +6856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-asset-admin.git",
-                "reference": "a1f75cdf66ebbdcc405467dd4658ff197c10f5e1"
+                "reference": "30c395f2bc26742da5803e72c834a4e06a50674d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/a1f75cdf66ebbdcc405467dd4658ff197c10f5e1",
-                "reference": "a1f75cdf66ebbdcc405467dd4658ff197c10f5e1",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/30c395f2bc26742da5803e72c834a4e06a50674d",
+                "reference": "30c395f2bc26742da5803e72c834a4e06a50674d",
                 "shasum": ""
             },
             "require": {
@@ -6907,7 +6907,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-asset-admin/tree/pulls/3/standardise-endpoints"
             },
-            "time": "2024-07-31T06:34:00+00:00"
+            "time": "2024-07-31T06:58:58+00:00"
         },
         {
             "name": "silverstripe/assets",
