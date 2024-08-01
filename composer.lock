@@ -6782,12 +6782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-admin.git",
-                "reference": "58818c6f24403e85f74ad1263fff95df3561f3ec"
+                "reference": "f159cb1255e64fa25d8560c1df2e4cca8ffca6d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/58818c6f24403e85f74ad1263fff95df3561f3ec",
-                "reference": "58818c6f24403e85f74ad1263fff95df3561f3ec",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-admin/zipball/f159cb1255e64fa25d8560c1df2e4cca8ffca6d3",
+                "reference": "f159cb1255e64fa25d8560c1df2e4cca8ffca6d3",
                 "shasum": ""
             },
             "require": {
@@ -6848,7 +6848,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-admin/tree/pulls/3/standardise-endpoints"
             },
-            "time": "2024-07-30T23:54:11+00:00"
+            "time": "2024-08-01T06:45:05+00:00"
         },
         {
             "name": "silverstripe/asset-admin",
@@ -10340,12 +10340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/supported-modules.git",
-                "reference": "555449db623c43e0a0bc8cc01116c050e0b8d749"
+                "reference": "ba1932dceb030890b2138b148faf0833857467f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/supported-modules/zipball/555449db623c43e0a0bc8cc01116c050e0b8d749",
-                "reference": "555449db623c43e0a0bc8cc01116c050e0b8d749",
+                "url": "https://api.github.com/repos/silverstripe/supported-modules/zipball/ba1932dceb030890b2138b148faf0833857467f5",
+                "reference": "ba1932dceb030890b2138b148faf0833857467f5",
                 "shasum": ""
             },
             "require": {
@@ -10369,7 +10369,7 @@
                 "issues": "https://github.com/silverstripe/supported-modules/issues",
                 "source": "https://github.com/silverstripe/supported-modules/tree/main"
             },
-            "time": "2024-06-18T05:40:45+00:00"
+            "time": "2024-08-01T05:51:19+00:00"
         },
         {
             "name": "silverstripe/tagfield",
