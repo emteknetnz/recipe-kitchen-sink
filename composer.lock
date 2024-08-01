@@ -1594,12 +1594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-elemental.git",
-                "reference": "91351045088e1f4e0a713f5f01045c5343567d3b"
+                "reference": "13061f503a9f69291b6bc431931a8840d7e3b0b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/91351045088e1f4e0a713f5f01045c5343567d3b",
-                "reference": "91351045088e1f4e0a713f5f01045c5343567d3b",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-elemental/zipball/13061f503a9f69291b6bc431931a8840d7e3b0b4",
+                "reference": "13061f503a9f69291b6bc431931a8840d7e3b0b4",
                 "shasum": ""
             },
             "require": {
@@ -1658,7 +1658,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-elemental/tree/pulls/6/standardise-endpoints"
             },
-            "time": "2024-07-30T23:55:31+00:00"
+            "time": "2024-07-31T23:28:58+00:00"
         },
         {
             "name": "dnadesign/silverstripe-elemental-userforms",
@@ -6856,12 +6856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-asset-admin.git",
-                "reference": "47e51130804363f9883f8c89598a2f99ab7a9eca"
+                "reference": "e5bd7ae286c4aecc177711e753c7c1d9a7b45d8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/47e51130804363f9883f8c89598a2f99ab7a9eca",
-                "reference": "47e51130804363f9883f8c89598a2f99ab7a9eca",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-asset-admin/zipball/e5bd7ae286c4aecc177711e753c7c1d9a7b45d8e",
+                "reference": "e5bd7ae286c4aecc177711e753c7c1d9a7b45d8e",
                 "shasum": ""
             },
             "require": {
@@ -6907,7 +6907,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-asset-admin/tree/pulls/3/standardise-endpoints"
             },
-            "time": "2024-07-31T22:12:14+00:00"
+            "time": "2024-08-01T01:11:14+00:00"
         },
         {
             "name": "silverstripe/assets",
@@ -10889,12 +10889,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-versioned-admin.git",
-                "reference": "5e522aa664ce8f8f1bc4c9e38e3d7f6d5a00b6f1"
+                "reference": "7f61d8f817a3b667f5c3d53fa650a533cf0b9dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-versioned-admin/zipball/5e522aa664ce8f8f1bc4c9e38e3d7f6d5a00b6f1",
-                "reference": "5e522aa664ce8f8f1bc4c9e38e3d7f6d5a00b6f1",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-versioned-admin/zipball/7f61d8f817a3b667f5c3d53fa650a533cf0b9dce",
+                "reference": "7f61d8f817a3b667f5c3d53fa650a533cf0b9dce",
                 "shasum": ""
             },
             "require": {
@@ -10956,7 +10956,7 @@
                 "source": "https://github.com/creative-commoners/silverstripe-versioned-admin/tree/pulls/3/standardise-endpoints",
                 "issues": "https://github.com/creative-commoners/silverstripe-versioned-admin/issues"
             },
-            "time": "2024-07-31T00:50:49+00:00"
+            "time": "2024-07-31T23:31:41+00:00"
         },
         {
             "name": "silverstripe/versionfeed",
