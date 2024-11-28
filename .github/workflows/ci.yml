@@ -100,10 +100,6 @@ jobs:
           endtoend_config: vendor/silverstripe/blog/behat.yml
         - php: 8.3
           endtoend: true
-          endtoend_suite: campaign-admin
-          endtoend_config: vendor/silverstripe/campaign-admin/behat.yml
-        - php: 8.3
-          endtoend: true
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job1
@@ -117,22 +113,6 @@ jobs:
           endtoend_suite: cms
           endtoend_config: vendor/silverstripe/cms/behat.yml
           endtoend_tags: job3,job4,job5,job6
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: contentreview
-          endtoend_config: vendor/silverstripe/contentreview/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: elemental-bannerblock
-          endtoend_config: vendor/silverstripe/elemental-bannerblock/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: elemental-fileblock
-          endtoend_config: vendor/silverstripe/elemental-fileblock/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: externallinks
-          endtoend_config: vendor/silverstripe/externallinks/behat.yml
         - php: 8.3
           endtoend: true
           endtoend_suite: linkfield
@@ -149,10 +129,6 @@ jobs:
           endtoend_config: vendor/silverstripe/mfa/behat.yml
         - php: 8.3
           endtoend: true
-          endtoend_suite: securityreport
-          endtoend_config: vendor/silverstripe/securityreport/behat.yml
-        - php: 8.3
-          endtoend: true
           endtoend_suite: session-manager
           endtoend_config: vendor/silverstripe/session-manager/behat.yml
         - php: 8.3
@@ -163,10 +139,6 @@ jobs:
           endtoend: true
           endtoend_suite: siteconfig
           endtoend_config: vendor/silverstripe/siteconfig/behat.yml
-        - php: 8.3
-          endtoend: true
-          endtoend_suite: sitewidecontent-report
-          endtoend_config: vendor/silverstripe/sitewidecontent-report/behat.yml
         - php: 8.3
           endtoend: true
           endtoend_suite: subsites
