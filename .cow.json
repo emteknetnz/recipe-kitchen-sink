@@ -7,20 +7,10 @@
   "child-stability-inherit": [
     "silverstripe/recipe-core",
     "silverstripe/recipe-cms",
-    "silverstripe/recipe-blog",
-    "silverstripe/recipe-form-building",
-    "silverstripe/recipe-authoring-tools",
-    "silverstripe/recipe-collaboration",
-    "silverstripe/recipe-reporting-tools",
-    "silverstripe/recipe-ccl",
-    "silverstripe/recipe-solr-search",
-    "silverstripe/recipe-services",
-    "silverstripe/recipe-content-blocks",
     "silverstripe/installer"
   ],
   "dependency-constraint": "loose",
   "vendors": [
-    "cwp",
     "silverstripe",
     "tractorcow",
     "symbiote",
