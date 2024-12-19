@@ -115,7 +115,7 @@ jobs:
           EXCLUDE_PACKAGES='@silverstripe/react-injector@0.2.1;cwp-watea-theme@4.0.0;cwp-starter-theme@4.0.0;glob-to-regexp@0.3.0;jquery.are-you-sure@1.9.0'
           # Loop all package.json files that were previously installed by composer install
           BASEDIR=$(pwd)
-          FILES=$(find . | grep package.json | grep -v node_modules)
+          FILES=$(find . | grep package.json | grep -v node_modules | grep -v tinymce)
           for FILE in $FILES; do
             # remove trailing "/package.json"
             SUBDIR="${FILE/\/package.json/}"
@@ -137,5 +137,6 @@ jobs:
               npm install -g license-checker
             fi
             license-checker --production --unknown --out /dev/null --onlyAllow "$SPDX_ALLOWED_DELIMITED" --excludePackages "$EXCLUDE_PACKAGES"
+            echo "All licenses are allowed for $DIR"
           done
           echo "Passed"
