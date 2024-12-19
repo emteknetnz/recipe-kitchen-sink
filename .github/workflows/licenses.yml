@@ -42,9 +42,8 @@ jobs:
         uses: shivammathur/setup-php@c541c155eee45413f5b09a52248675b1a2575231 # v2.31.1
         with:
           php-version: ${{ steps.phpversion.outputs.version }}
-          extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, xdebug, zip
+          extensions: curl, dom, gd, intl, json, ldap, mbstring, mysql, tidy, zip
           tools: composer:v2
-          coverage: xdebug
 
       - name: Composer install
         run: composer install
@@ -132,6 +131,11 @@ jobs:
               npm install -g yarn;
             fi
             yarn install --network-concurrency 1
+            DEPS=$(jq -r '.dependencies' package.json)
+            if [[ $DEPS == "null" ]] || [[ $DEPS == "{}" ]]; then
+              echo "No non-dev dependencies found in $DIR"
+              continue
+            fi
             if [[ -z $(which license-checker) ]]; then
               echo "Installing license-checker"
               npm install -g license-checker
