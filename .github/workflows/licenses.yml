@@ -131,7 +131,13 @@ jobs:
             fi
             yarn install --network-concurrency 1
             if [[ -z $(which license-checker) ]]; then
+              "Installing license-checker"
               npm install -g license-checker;
+              license-checker --version
+            else
+              "license-checker already installed"
+              which license-checker
+              license-checker --version
             fi
             license-checker --production --unknown --out=/dev/null --onlyAllow="$SPDX_ALLOWED_DELIMITED" --excludePackages="$EXCLUDE_PACKAGES"
           done
