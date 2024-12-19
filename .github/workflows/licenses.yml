@@ -95,7 +95,6 @@ jobs:
         run: |
           # Set nvmdir explicitly before installation. Default dir doesn't work for some reason.
           export NVM_DIR="${HOME}/.nvm"
-          echo "NVM_DIR is $NVM_DIR"
           # Installation fails if install dir is specified but doesn't exist
           if ! [[ -d "$NVM_DIR" ]]; then
             echo "NVM_DIR '$NVM_DIR' doesn't exist - creating it now"
@@ -134,6 +133,6 @@ jobs:
             if [[ -z $(which license-checker) ]]; then
               npm install -g license-checker;
             fi
-            license-checker --production --onlyAllow $SPDX_ALLOWED_DELIMITED --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES
+            license-checker --production --onlyAllow "$SPDX_ALLOWED_DELIMITED" --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES
           done
           echo "Passed"
