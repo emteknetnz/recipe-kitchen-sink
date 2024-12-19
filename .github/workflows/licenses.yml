@@ -89,6 +89,8 @@ jobs:
               exit 1
             fi
           done
+          # Remove license-checker as its name will collide with the npm license checker
+          composer global remove madewithlove/license-checker
           echo "All licenses are allowed"
 
       - name: NPM licenses
@@ -139,6 +141,6 @@ jobs:
               which license-checker
               license-checker --version
             fi
-            license-checker --production --unknown --out=/dev/null --onlyAllow="$SPDX_ALLOWED_DELIMITED" --excludePackages="$EXCLUDE_PACKAGES"
+            license-checker --production --unknown --out /dev/null --onlyAllow "$SPDX_ALLOWED_DELIMITED" --excludePackages "$EXCLUDE_PACKAGES"
           done
           echo "Passed"
