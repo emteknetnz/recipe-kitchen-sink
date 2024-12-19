@@ -133,7 +133,6 @@ jobs:
             if [[ -z $(which license-checker) ]]; then
               npm install -g license-checker;
             fi
-            echo "license-checker --production --onlyAllow \"$SPDX_ALLOWED_DELIMITED\" --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES"
-            echo $(license-checker --production --onlyAllow "$SPDX_ALLOWED_DELIMITED" --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES)
+            license-checker --production --onlyAllow "'$SPDX_ALLOWED_DELIMITED'" --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES
           done
           echo "Passed"
