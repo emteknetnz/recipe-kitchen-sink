@@ -135,7 +135,8 @@ jobs:
             fi
             # Need to put the env variable as local variable otherwise the space in "Public Domain" will be split
             ONLY_ALLOW="$SPDX_ALLOWED_DELIMITED"
+            echo "SPDX_ALLOWED_DELIMITED is $SPDX_ALLOWED_DELIMITED"
             echo "ONLY_ALLOW is $ONLY_ALLOW"
-            license-checker --production --onlyAllow $ONLY_ALLOW --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES
+            license-checker --production --onlyAllow "$ONLY_ALLOW" --unknown --out /dev/null --excludePackages $EXCLUDE_PACKAGES
           done
           echo "Passed"
