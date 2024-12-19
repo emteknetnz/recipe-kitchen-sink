@@ -55,9 +55,6 @@ jobs:
           echo "Checking licenses of all dependencies"
           composer global require madewithlove/license-checker
           COMPOSER_GLOBAL_HOME=$(composer -q -n config --global home)
-          # Fetch a list of allowed SPDX identifiers from the repository
-          URL=https://raw.githubusercontent.com/silverstripe/gha-run-tests/refs/heads/1/allowed-spdx-delimited.txt
-          echo "Fetching from $URL"
           # Update the licenses in installed.json file to be sorted so that allowed SPDX identifier
           # are at the top of the list. This is done because the license-checker will only check the first SPDX.
           SPDX_ALLOWED_DELIMITED=$SPDX_ALLOWED_DELIMITED php -r '
@@ -98,6 +95,7 @@ jobs:
         run: |
           # Set nvmdir explicitly before installation. Default dir doesn't work for some reason.
           export NVM_DIR="${HOME}/.nvm"
+          echo "NVM_DIR is $NVM_DIR"
           # Installation fails if install dir is specified but doesn't exist
           if ! [[ -d "$NVM_DIR" ]]; then
             echo "NVM_DIR '$NVM_DIR' doesn't exist - creating it now"
@@ -111,6 +109,8 @@ jobs:
             echo "Error while installing nvm"
             exit 1
           fi
+          # This loads nvm
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           EXCLUDE_PACKAGES='@silverstripe/react-injector@0.2.1;cwp-watea-theme@4.0.0;cwp-starter-theme@4.0.0;glob-to-regexp@0.3.0;jquery.are-you-sure@1.9.0'
           # Loop all package.json files that were previously installed by composer install
           BASEDIR=$(pwd)
